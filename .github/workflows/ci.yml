@@ -1,0 +1,133 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: backend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy src
+      - run: uv run pytest -q
+  ai:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: ai } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy src
+      - run: uv run pytest -q
+      - name: golden-set eval (small stratified subset)
+        run: uv run python -m investwatch_ai.eval --subset ci --out "$RUNNER_TEMP/eval-ci.md"
+      - run: docker build -t investwatch-ai .
+  frontend:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: frontend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: frontend/package-lock.json }
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run format:check
+      - run: npm run typecheck
+      - run: npm run build
+  e2e:
+    # Browser tests of the production build (frontend/e2e): zero console messages on every
+    # route, live alert without a reload, reconnect after an API restart. Light stack: the real
+    # API + Socket.IO on SQLite, Redis and the mock analyzer; `make e2e` runs the full stack.
+    runs-on: ubuntu-latest
+    services:
+      redis:
+        image: valkey/valkey:8-alpine
+        ports: ["6379:6379"]
+    env:
+      REDIS_URL: redis://localhost:6379/0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen
+        working-directory: backend
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: frontend/package-lock.json }
+      - run: npm ci
+        working-directory: frontend
+      - run: npx playwright install --with-deps chromium
+        working-directory: frontend
+      - run: make e2e-light
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        continue-on-error: true
+        with:
+          name: playwright-report
+          path: |
+            frontend/playwright-report
+            frontend/test-results
+          retention-days: 7
+  security:
+    # Supply chain: secrets in git history and known CVEs in locked dependencies.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: gitleaks (full history)
+        # Image pinned by digest instead of a third-party action (tags can be re-pointed).
+        run: >-
+          docker run --rm -u "$(id -u):$(id -g)" -v "$PWD:/repo" -w /repo
+          zricethezav/gitleaks:v8.30.1@sha256:c00b6bd0aeb3071cbcb79009cb16a60dd9e0a7c60e2be9ab65d25e6bc8abbb7f
+          git --redact --verbose .
+      - uses: astral-sh/setup-uv@v5
+      - name: pip-audit (backend, ai)
+        run: make pip-audit
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: npm audit, runtime dependencies (high+)
+        working-directory: frontend
+        run: npm audit --omit=dev --audit-level=high
+      - name: npm audit, all dependencies (high+)
+        working-directory: frontend
+        run: npm audit --audit-level=high
+  images:
+    # Trivy CVE scan and CycloneDX SBOM of every image we build. Medium/high are reported,
+    # critical (with a fix available) fails the job.
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        image: [backend, ai, frontend, demo-sites]
+    env:
+      TRIVY: >-
+        docker run --rm -v /var/run/docker.sock:/var/run/docker.sock
+        -v ${{ github.workspace }}:/work -w /work -v trivy-cache:/root/.cache
+        aquasec/trivy:0.69.3@sha256:bcc376de8d77cfe086a917230e818dc9f8528e3c852f7b1aff648949b6258d1c
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t investwatch-${{ matrix.image }}:ci ./${{ matrix.image }}
+      - name: Trivy report (medium+, non-blocking)
+        run: >-
+          $TRIVY image --scanners vuln --ignore-unfixed --severity MEDIUM,HIGH,CRITICAL
+          --exit-code 0 investwatch-${{ matrix.image }}:ci
+      - name: CycloneDX SBOM
+        run: >-
+          $TRIVY image --format cyclonedx --output sbom-${{ matrix.image }}.cdx.json
+          investwatch-${{ matrix.image }}:ci
+      - uses: actions/upload-artifact@v4
+        # The account-wide artifact quota must not hide the CVE gate below.
+        continue-on-error: true
+        with:
+          name: sbom-${{ matrix.image }}
+          path: sbom-${{ matrix.image }}.cdx.json
+          retention-days: 14
+      - name: Trivy gate (critical fails)
+        run: >-
+          $TRIVY image --scanners vuln --ignore-unfixed --severity CRITICAL --exit-code 1
+          --skip-db-update investwatch-${{ matrix.image }}:ci

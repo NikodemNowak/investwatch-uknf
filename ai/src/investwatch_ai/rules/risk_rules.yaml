@@ -1,0 +1,154 @@
+# Module 2 rules (attachment 4 of the task) and the art. 76 UoIF elements used by module 3.
+# type: text = regex/lexicon, render = RenderSnapshot measurements, llm = needs the LLM.
+# weight: noisy-OR weight; the score only counts rules with status "fail" (see scoring.py).
+# legal_basis: provision the rule checks. "rozporządzenie del. 2017/565" is Commission Delegated
+# Regulation (EU) 2017/565 (MiFID II); "UoIF" is the Polish act on trading in financial
+# instruments. The rule texts follow attachment 4 of the task (docs/spec/).
+version: rules-v2
+rules:
+  - id: "1"
+    name: Identyfikacja firmy
+    legal_basis: art. 44 ust. 2 lit. a rozporządzenia del. 2017/565
+    type: text
+    weight: 0.4
+    description: Materiał zawiera oficjalną nazwę firmy inwestycyjnej (z formą prawną).
+  - id: "2"
+    name: Oznaczenie reklamy
+    legal_basis: art. 24 ust. 3 MiFID II
+    type: text
+    weight: 0.4
+    description: Materiał promocyjny jest jednoznacznie oznaczony jako reklama.
+  - id: "3"
+    name: Informacja o ryzyku
+    legal_basis: art. 44 ust. 2 lit. b rozporządzenia del. 2017/565
+    type: text
+    weight: 0.9
+    description: Twierdzeniom o zyskach towarzyszy informacja o istotnym ryzyku.
+  - id: "4"
+    name: Rozmiar czcionki ryzyka
+    legal_basis: art. 44 ust. 2 lit. c rozporządzenia del. 2017/565
+    type: render
+    weight: 0.6
+    description: Czcionka ostrzeżenia nie jest mniejsza od przeważającej czcionki materiału.
+  - id: "5"
+    name: Ekspozycja i kontrast ryzyka
+    legal_basis: art. 44 ust. 2 lit. c i e rozporządzenia del. 2017/565
+    type: render
+    weight: 0.6
+    description: Ostrzeżenie ma wystarczający kontrast i nie jest przesłonięte.
+  - id: "6"
+    name: Zakrywanie / ukrywanie ryzyka
+    legal_basis: art. 44 ust. 2 lit. e rozporządzenia del. 2017/565
+    type: render
+    weight: 0.7
+    description: Ostrzeżenie nie jest ukryte w przypisach, sekcji „Legal” ani w miejscach o niskiej widoczności.
+  - id: "7"
+    name: Dostępność za 1 kliknięciem
+    legal_basis: art. 44 ust. 2 lit. b i e rozporządzenia del. 2017/565
+    type: render
+    weight: 0.7
+    description: Ostrzeżenie jest widoczne bez rozwijania, klikania ani przechodzenia na inną warstwę.
+  - id: "8"
+    name: Responsywność (różne urządzenia)
+    legal_basis: art. 44 ust. 2 lit. g rozporządzenia del. 2017/565
+    type: render
+    weight: 0.5
+    description: Ostrzeżenie jest czytelne i nieucięte na desktopie, tablecie i telefonie.
+  - id: "9"
+    name: Zrozumiałość dla grupy docelowej
+    legal_basis: art. 44 ust. 2 lit. d rozporządzenia del. 2017/565
+    type: llm
+    weight: 0.3
+    description: Ostrzeżenie jest napisane językiem zrozumiałym dla przeciętnego odbiorcy.
+  - id: "10"
+    name: Spójność językowa
+    legal_basis: art. 44 ust. 2 lit. f rozporządzenia del. 2017/565
+    type: text
+    weight: 0.5
+    description: Ostrzeżenie jest w tym samym języku co główny przekaz.
+  - id: "11"
+    name: Porównania produktów / usług
+    legal_basis: art. 44 ust. 3 rozporządzenia del. 2017/565
+    type: llm
+    weight: 0.5
+    description: Porównania podają źródło i przyjęte założenia.
+  - id: "12a"
+    name: "Wyniki historyczne: okres i zakres"
+    legal_basis: art. 44 ust. 4 rozporządzenia del. 2017/565
+    type: llm
+    weight: 0.5
+    description: Wyniki obejmują ostatnie 5 lat w pełnych okresach 12-miesięcznych, z okresem referencyjnym i źródłem.
+  - id: "12b"
+    name: "Wyniki historyczne: warunki i waluta"
+    legal_basis: art. 44 ust. 4 rozporządzenia del. 2017/565
+    type: text
+    weight: 0.5
+    description: Jest ostrzeżenie o kursach walut i wpływie prowizji, opłat i obciążeń.
+  - id: "13"
+    name: Dominacja wyników historycznych
+    legal_basis: art. 44 ust. 4 lit. a rozporządzenia del. 2017/565
+    type: render
+    weight: 0.5
+    description: Wyniki historyczne nie są najbardziej wyeksponowanym elementem.
+  - id: "14"
+    name: Ostrzeżenie przy wynikach historycznych
+    legal_basis: art. 44 ust. 4 lit. d rozporządzenia del. 2017/565
+    type: text
+    weight: 0.7
+    description: Jest zastrzeżenie, że wyniki historyczne nie są wiarygodnym wskaźnikiem przyszłych wyników.
+  - id: "15"
+    name: Prognozy przyszłych wyników
+    legal_basis: art. 44 ust. 6 rozporządzenia del. 2017/565
+    type: text
+    weight: 0.7
+    description: Prognozie towarzyszy zastrzeżenie, że nie jest wiarygodnym wskaźnikiem przyszłych wyników.
+  - id: "16"
+    name: Informacja podatkowa
+    legal_basis: art. 44 ust. 7 rozporządzenia del. 2017/565
+    type: text
+    weight: 0.5
+    description: Przy odwołaniu do podatków jest informacja o zależności od sytuacji klienta i możliwych zmianach.
+  - id: "17"
+    name: Zakaz sugerowania aprobaty organu nadzoru
+    legal_basis: art. 44 ust. 8 rozporządzenia del. 2017/565
+    type: text
+    weight: 0.8
+    description: Odwołanie do KNF nie sugeruje zatwierdzenia ani aprobaty produktu lub usługi.
+  - id: "18"
+    name: Nadzór jako argument bezpieczeństwa
+    legal_basis: art. 44 ust. 8 rozporządzenia del. 2017/565
+    type: text
+    weight: 0.9
+    description: Odwołanie do nadzoru nie jest używane jako argument, że inwestycja jest bezpieczna.
+
+# Module 3: art. 76 UoIF elements of investment advice. status "fail" = element present.
+advisory_elements:
+  # The five elements below are the statutory features of investment advice (art. 76 UoIF).
+  - id: "76a"
+    name: Rekomendacja spersonalizowana
+    legal_basis: art. 76 ustawy o obrocie instrumentami finansowymi
+    type: text
+    weight: 1.0
+  - id: "76b"
+    name: Dotyczy instrumentów finansowych
+    legal_basis: art. 2 i 3 ustawy o obrocie instrumentami finansowymi
+    type: text
+    weight: 0.5
+  - id: "76c"
+    name: Rekomendacja kup / sprzedaj / trzymaj
+    legal_basis: art. 76 ustawy o obrocie instrumentami finansowymi
+    type: text
+    weight: 1.0
+  - id: "76d"
+    name: Usługa oferowana w Polsce
+    legal_basis: art. 69 ust. 2 ustawy o obrocie instrumentami finansowymi
+    type: text
+    weight: 0.25
+  - id: "76e"
+    name: Zarządzanie cudzym portfelem
+    legal_basis: art. 75 ustawy o obrocie instrumentami finansowymi
+    type: text
+    weight: 0.75
+# M3 rule-based score = sigmoid(bias + scale * sum(weight of present elements)); hand-set.
+advisory_bias: -2.5
+advisory_scale: 2.0

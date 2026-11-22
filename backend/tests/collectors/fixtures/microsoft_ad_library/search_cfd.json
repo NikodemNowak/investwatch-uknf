@@ -1,0 +1,246 @@
+{
+ "@odata.context": "https://adlibrary.api.bingads.microsoft.com/api/v1/$metadata#Ads",
+ "@odata.count": 79,
+ "value": [
+  {
+   "AdId": 71743374721028,
+   "AdvertiserName": "Swissquote Capital Markets Limited",
+   "AdvertiserId": 4295333215,
+   "Title": "Handel FX i CFD z Swissquote - Swissquote - Otwórz konto - Dźwignia FX i CFD do 1:30",
+   "Description": "61% rachunków inwestorów detalicznych CFD odnotowuje straty pieniężne w wyniku handlu.. Crossy FX i CFD na akcje, indeksy, towary i obligacje po dopasowanych cenach.",
+   "DisplayUrl": "www.swissquote.com",
+   "DestinationUrl": "https://www.swissquote.com/pl-eu/private/trade/products/forex/currency-pairs",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72430797787438,
+   "AdvertiserName": "primeLine Solutions GmbH",
+   "AdvertiserId": 4294993007,
+   "Title": "Rechner für CFD - CFD Rechner Konfigurator",
+   "Description": "primeLine Solutions bietet Ihnen CFD Rechner ganz nach Ihren Anforderungen.. Die Zeit drängt? Bei Bedarf liefern wir Ihren CFD Rechner am nächsten Werktag.",
+   "DisplayUrl": "www.primeline-solutions.com/CFD/Rechner",
+   "DestinationUrl": "https://www.primeline-solutions.com/de/workstation/nach-einsatzzweck/fem-cfd-simulation/",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71262337928533,
+   "AdvertiserName": "Swissquote Capital Markets Limited",
+   "AdvertiserId": 4295333215,
+   "Title": "Najlepszy wybór – CFD na akcje - Swissquote - CFD na akcje",
+   "Description": "61% rachunków inwestorów detalicznych CFD odnotowuje straty pieniężne w wyniku handlu.. Zanurz się w CFD na akcje z bezpieczeństwem szwajcarskiej grupy bankowej.",
+   "DisplayUrl": "www.swissquote.com",
+   "DestinationUrl": "https://www.swissquote.com/pl-eu/private/trade/products/cfds",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72430705507097,
+   "AdvertiserName": "Abcam PLC",
+   "AdvertiserId": 4295011775,
+   "Title": "Factor D/CFD: immunoassay - Factor D/CFD kit",
+   "Description": "From basic ELISA principles through to protocols, analysis, and troubleshooting.. Superior antibodies ensure high sensitivity, specificity, & reproducibility immunoassays.",
+   "DisplayUrl": "www.abcam.com",
+   "DestinationUrl": "https://www.abcam.com/en-us/search#f-adcategorytype=Assay%20Kits&sortCriteria=relevance&q=cfd%20elisa",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71537216068656,
+   "AdvertiserName": "Swissquote Capital Markets Limited",
+   "AdvertiserId": 4295333215,
+   "Title": "CFD z Grupą Szwajcarską - Szybko owórz konto CFD - Zwiększ zyski dzięki dźwigni",
+   "Description": "",
+   "DisplayUrl": "www.swissquote.com",
+   "DestinationUrl": "https://www.swissquote.com/pl-eu/private/trade/products/cfds",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72705618558972,
+   "AdvertiserName": "Abcam PLC",
+   "AdvertiserId": 4295011775,
+   "Title": "High purity: Factor D/CFD - Factor D/CFD: Abcam proteins",
+   "Description": "Discover our quality Factor D/CFD proteins at Abcam. Accelerate your research today.. Biologically active proteins. Uncompromising purity. Explore Abcam's products today.",
+   "DisplayUrl": "www.abcam.com/protein/factor-d-cfd",
+   "DestinationUrl": "https://www.abcam.com/en-us/search#f-adcategorytype=Proteins%20%26%20Peptides&sortCriteria=relevance&q=factor%20d%20protein",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71399801244462,
+   "AdvertiserName": "Swissquote Bank SA",
+   "AdvertiserId": 4295011230,
+   "Title": "Swissquote® Trade CFD - Your CFD Broker",
+   "Description": "Diversify risks with CFD on stocks, indices, commodities and bonds. Trade spot, forward, and synthetic CFDs from Swissquote",
+   "DisplayUrl": "www.swissquote.com/CFD/Trading",
+   "DestinationUrl": "https://www.swissquote.com/en-row/private/trade/products/cfds?landing=1",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72705682556520,
+   "AdvertiserName": "Kateryna Lobotenko",
+   "AdvertiserId": 4295079345,
+   "Title": "The Demo Trading Platform - 100% Digital Trading Platforms",
+   "Description": "Trade intuitively on thousands of CFDs. Best online trading platform. Trading apps!. The best CFD trading platform. CFD free trading account. The demo trading platform!",
+   "DisplayUrl": "simple-invest.info/Trading/Platform",
+   "DestinationUrl": "https://simple-invest.info/en/online-trading.html",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71605936334471,
+   "AdvertiserName": "Swissquote Capital Markets Limited",
+   "AdvertiserId": 4295333215,
+   "Title": "Swissquote x TradingView - TradingView x Swissquote",
+   "Description": "61% rachunków inwestorów detalicznych CFD odnotowuje straty pieniężne w wyniku handlu.",
+   "DisplayUrl": "www.swissquote.com",
+   "DestinationUrl": "https://www.swissquote.com/pl-eu/private/trade/platforms/forex-cfds/cfxd",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72362061627265,
+   "AdvertiserName": "Amazon Europe Core S.à r.l",
+   "AdvertiserId": 4295031035,
+   "Title": "trading mit cfds Kaufen - Amazon.de® - Ihre Online-Buchhandlung",
+   "Description": "Erhalten  auf Amazon Angebote für trading mit cfds im Bereich Bücher. Entdecken tausende Produkte. Lesen  Kundenbewertungen und finde  Bestseller",
+   "DisplayUrl": "www.amazon.de/buecher/trading mit cfds",
+   "DestinationUrl": "https://www.amazon.de/s/?ie=UTF8&keywords=trading+mit+cfds&index=aps",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71468496810779,
+   "AdvertiserName": "Swissquote Capital Markets Limited",
+   "AdvertiserId": 4295333215,
+   "Title": "Handluj z Grupą Szwajcarską - Handluj nawet w 10 językach - Handluj z dźwignią",
+   "Description": "61% rachunków inwestorów detalicznych CFD odnotowuje straty pieniężne w wyniku handlu.. Crossy FX i CFD na akcje, indeksy, towary i obligacje po dopasowanych cenach.",
+   "DisplayUrl": "www.swissquote.com",
+   "DestinationUrl": "https://www.swissquote.com/pl-eu/private/trade/products/forex/currency-pairs",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72362061627267,
+   "AdvertiserName": "Amazon Europe Core S.à r.l",
+   "AdvertiserId": 4295031035,
+   "Title": "trading mit cfds Kaufen - Ihre Online-Buchhandlung",
+   "Description": "Erhalten  auf Amazon Angebote für trading mit cfds im Bereich Bücher. Entdecken tausende Produkte. Lesen  Kundenbewertungen und finde  Bestseller",
+   "DisplayUrl": "www.amazon.de/buecher/Trading Mit Cfds",
+   "DestinationUrl": "https://www.amazon.de/s/?ie=UTF8&keywords=trading+mit+cfds&index=aps",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71674655383639,
+   "AdvertiserName": "Swissquote Capital Markets Limited",
+   "AdvertiserId": 4295333215,
+   "Title": "Wzmocnij handel FX i CFD - Swissquote - Platforma MT5 - Swissquote - Konto MT5",
+   "Description": "",
+   "DisplayUrl": "www.swissquote.com",
+   "DestinationUrl": "https://www.swissquote.com/pl-eu/private/trade/platforms/forex-cfds/metatrader-5",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72499524722803,
+   "AdvertiserName": "Kateryna Lobotenko",
+   "AdvertiserId": 4295079345,
+   "Title": "Award-Winning Trading Platform - Fully Regulated CFD Broker",
+   "Description": "Start trading commodity CFDs in minutes. Buy and sell Oil and Gold without hidden fees.. Trade CFDs on Oil, Gold & Silver with zero commissions. Open a free demo account today!",
+   "DisplayUrl": "simple-invest.info/Commodities/Trading-Online",
+   "DestinationUrl": "https://simple-invest.info/en/online-trading.html",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72705543402073,
+   "AdvertiserName": "FxPro Financial Services Ltd",
+   "AdvertiserId": 4295011546,
+   "Title": "Forex Trading Online - Online Forex CFD Trading",
+   "Description": "Competitive Forex spreads with FxPro. Start trading 74% of retail CFD accounts lose money.. Low Spreads on Forex & CFDs. Ultra-fast advanced order execution when you trade with FxPro",
+   "DisplayUrl": "promo.fxpro.com/Trading/Online",
+   "DestinationUrl": "https://promo.fxpro.com/en/promo-forex",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71399821849658,
+   "AdvertiserName": "SAXO BANK A/S",
+   "AdvertiserId": 4295006025,
+   "Title": "Brak Prowizji od Handlu na CFD - Otwórz konto demo",
+   "Description": "Inwestuje w CFD na Wzrosty lub Spadki. 62% detalicznych rachunków CFD traci pieniądze. 9000 kontraktów CFD na akcje, ETF-y, Indeksy, FX, Surowce, Obligacje Rządowe i Opcje.",
+   "DisplayUrl": "www.home.saxo/cfd/firma",
+   "DestinationUrl": "https://www.home.saxo/pl-pl/products/cfds",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72705543402075,
+   "AdvertiserName": "FxPro Financial Services Ltd",
+   "AdvertiserId": 4295011546,
+   "Title": "Forex Trading with FxPro",
+   "Description": "Trade: Forex, Shares, Commodities & other CFDs. 74% of retail CFD accounts lose money.",
+   "DisplayUrl": "promo.fxpro.com",
+   "DestinationUrl": "https://promo.fxpro.com/en/promo-forex",
+   "AssetJson": "[{\"Width\":1200,\"Height\":627,\"AssetType\":\"Image\",\"AssetUrl\":\"https://www.bing.com/th?id=OADD2.7559465245731_1CEYOKOEQTPNCV96TM&pid=21.2\"},{\"Width\":1200,\"Height\":1200,\"AssetType\":\"Image\",\"AssetUrl\":\"https://www.bing.com/th?id=OADD2.7559465245732_1P5B6UG1OACQPMLB06&pid=21.2\"}]"
+  },
+  {
+   "AdId": 72499524739570,
+   "AdvertiserName": "Kateryna Lobotenko",
+   "AdvertiserId": 4295079345,
+   "Title": "DAX 40 Trading CFD Platform - Trading Dow Jones Online",
+   "Description": "Indices trading platform. DAX 40 trading. Trading Dow Jones. Trade Nasdaq!. Trade S&P 500, NASDAQ & more on our premium CFD platform. 0% commission, tight spreads.",
+   "DisplayUrl": "simple-invest.info/Indices/Trading-Online",
+   "DestinationUrl": "https://simple-invest.info/en/online-trading.html",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72430624539336,
+   "AdvertiserName": "FxPro Financial Services Ltd",
+   "AdvertiserId": 4295011546,
+   "Title": "Online Forex Trading Platform - Online Forex CFD Trading",
+   "Description": "Competitive Forex spreads with FxPro. Start trading 74% of retail CFD accounts lose money.. Secure funding methods. 2100+ Trading Instruments: FX, Metals, CFDs. MT4 Platform. Join.",
+   "DisplayUrl": "promo.fxpro.com/Trading/Online",
+   "DestinationUrl": "https://promo.fxpro.com/en/promo-forex",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71537260390758,
+   "AdvertiserName": "SAXO BANK A/S",
+   "AdvertiserId": 4295006025,
+   "Title": "Otwórz konto demo - Spready już od 0.6 pipsa",
+   "Description": "Forex z wąskimi spreadami i szybką egzekucją. 62% detalicznych kont CFD traci pieniądze.. Zwiększone bezpieczeństwo środków dzięki obowiązkowej podwójnej werykacji logowania.",
+   "DisplayUrl": "www.home.saxo/forex/platformy",
+   "DestinationUrl": "https://www.home.saxo/pl-pl/products/forex",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71193618347504,
+   "AdvertiserName": "Swissquote Capital Markets Limited",
+   "AdvertiserId": 4295333215,
+   "Title": "Konto do handlu towarami - Swissquote - CFD na towary - Handluj głównymi towarami",
+   "Description": "",
+   "DisplayUrl": "www.swissquote.com",
+   "DestinationUrl": "https://www.swissquote.com/pl-eu/private/trade/products/cfds",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71812137899383,
+   "AdvertiserName": "SAXO BANK A/S",
+   "AdvertiserId": 4295006025,
+   "Title": "Trade Gold with Saxo - Award-Winning Trading Platform",
+   "Description": "Trade Commodities using Futures, Options & ETCs. 62% of retail CFD accounts lose money.. All Asset Classes from a Single Account. Powerful Platform. Start Trading with Saxo Today!",
+   "DisplayUrl": "www.home.saxo/commodity/trade",
+   "DestinationUrl": "https://www.home.saxo/products/commodities",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72430632789517,
+   "AdvertiserName": "FxPro Financial Services Ltd",
+   "AdvertiserId": 4295011546,
+   "Title": "Trade Forex Online with FxPro",
+   "Description": "Trade: Forex, Shares, Commodities & other CFDs. 74% of retail CFD accounts lose money.",
+   "DisplayUrl": "promo.fxpro.com",
+   "DestinationUrl": "https://promo.fxpro.com/en/promo-forex",
+   "AssetJson": "[{\"Width\":1200,\"Height\":627,\"AssetType\":\"Image\",\"AssetUrl\":\"https://www.bing.com/th?id=OADD2.7559465245731_1CEYOKOEQTPNCV96TM&pid=21.2\"},{\"Width\":1200,\"Height\":1200,\"AssetType\":\"Image\",\"AssetUrl\":\"https://www.bing.com/th?id=OADD2.7559465245732_1P5B6UG1OACQPMLB06&pid=21.2\"}]"
+  },
+  {
+   "AdId": 72705502414500,
+   "AdvertiserName": "FxPro Financial Services Ltd",
+   "AdvertiserId": 4295011546,
+   "Title": "Trade Forex Online with FxPro - Open CFDs Trading Account",
+   "Description": "Join FxPro Trading Broker. 75% of retail CFD accounts lose money.. Trade: Forex, Shares, Commodities & other CFDs. All New Web-Based Forex Platform.",
+   "DisplayUrl": "www.fxpro.com/broker",
+   "DestinationUrl": "https://www.fxpro.com/",
+   "AssetJson": ""
+  }
+ ]
+}

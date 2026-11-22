@@ -1,0 +1,126 @@
+{
+ "@odata.context": "https://adlibrary.api.bingads.microsoft.com/api/v1/$metadata#Ads",
+ "@odata.count": 65,
+ "value": [
+  {
+   "AdId": 72430624539336,
+   "AdvertiserName": "FxPro Financial Services Ltd",
+   "AdvertiserId": 4295011546,
+   "Title": "Online Forex Trading Platform - Online Forex CFD Trading",
+   "Description": "Competitive Forex spreads with FxPro. Start trading 74% of retail CFD accounts lose money.. Secure funding methods. 2100+ Trading Instruments: FX, Metals, CFDs. MT4 Platform. Join.",
+   "DisplayUrl": "promo.fxpro.com/Trading/Online",
+   "DestinationUrl": "https://promo.fxpro.com/en/promo-forex",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72155926483770,
+   "AdvertiserName": "Kateryna Lobotenko",
+   "AdvertiserId": 4295079345,
+   "Title": "Free Forex Demo Account - Online Forex Trading Platform",
+   "Description": "Trade Forex. Use our advanced trading tools to protect your profits and limit losses!. Forex trading platform app. Spreads from 0.0 pips. Start a free demo now!",
+   "DisplayUrl": "simple-invest.info/Forex/Online-Trading",
+   "DestinationUrl": "https://simple-invest.info/en/online-trading.html",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72430624539337,
+   "AdvertiserName": "FxPro Financial Services Ltd",
+   "AdvertiserId": 4295011546,
+   "Title": "The Platform for Forex Traders - Trade the Forex Market",
+   "Description": "Forex trading with low spreads & 0 funding fees 74% of retail CFD accounts lose money.. Secure funding methods. 2100+ Trading Instruments: FX, Metals, CFDs. MT4 Platform. Join.",
+   "DisplayUrl": "promo.fxpro.com/Online/Investing",
+   "DestinationUrl": "https://promo.fxpro.com/en/promo-forex",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 80058404071224,
+   "AdvertiserName": "YourSurprise.com B.V.",
+   "AdvertiserId": 4295001036,
+   "Title": "Forex met Foto bedrukken? - Forex Met Foto Maken?",
+   "Description": "Gepersonaliseerde Wanddecoratie. Bedrukt met je leukste Foto en/of Tekst. Snel geleverd!. Persoonlijke Cadeaus voor elke gelegenheid ontwerp je eenvoudig bij YourSurprise.",
+   "DisplayUrl": "yoursurprise.nl",
+   "DestinationUrl": "https://www.yoursurprise.nl/huis-accessoires/wanddecoratie/foto-op-forex",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72499343967409,
+   "AdvertiserName": "FxPro Financial Services Ltd",
+   "AdvertiserId": 4295011546,
+   "Title": "Forex Trading with FxPro - Award-Winning Forex Broker",
+   "Description": "Competitive Forex spreads with FxPro. Start trading 74% of retail CFD accounts lose money.. Low Spreads on Forex & CFDs. Ultra-fast advanced order execution when you trade with FxPro",
+   "DisplayUrl": "promo.fxpro.com/Trading/Online",
+   "DestinationUrl": "https://promo.fxpro.com/en/promo-forex",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71124920224648,
+   "AdvertiserName": "Amazon Europe Core S.à r.l",
+   "AdvertiserId": 4295034605,
+   "Title": "Buy Forex for dummies - Low prices on Forex for dummies",
+   "Description": "Low prices on millions of books. Free UK delivery on eligible orders. Browse new releases, best sellers or classics & find your next favourite book",
+   "DisplayUrl": "www.amazon.co.uk",
+   "DestinationUrl": "https://www.amazon.co.uk/s/?ie=UTF8&keywords=forex+for+dummies&index=stripbooks",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72499343967410,
+   "AdvertiserName": "FxPro Financial Services Ltd",
+   "AdvertiserId": 4295011546,
+   "Title": "The Platform for Forex Traders - Open a Forex Trading Account‎",
+   "Description": "Forex trading with low spreads & 0 funding fees 74% of retail CFD accounts lose money.. Winner of 'Best FX Provider' 2020 award. Join now! 74% of retail CFD accounts lose money.",
+   "DisplayUrl": "promo.fxpro.com/Online/Investing",
+   "DestinationUrl": "https://promo.fxpro.com/en/promo-forex",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 71468541982094,
+   "AdvertiserName": "QM4 Investing Pty Ltd",
+   "AdvertiserId": 4295120344,
+   "Title": "Forex Strength Meter - Live Forex Strength Meter",
+   "Description": "Find the best trade setups with live strength charts and 1-min streaming data.. Track trends across timeframes. Works on Windows & macOS. Free 7-day trial.",
+   "DisplayUrl": "currencystrength.org",
+   "DestinationUrl": "https://currencystrength.org/",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72224466157328,
+   "AdvertiserName": "FxPro Financial Services Ltd",
+   "AdvertiserId": 4295011546,
+   "Title": "The Platform for Forex Traders - Award-Winning Forex Broker",
+   "Description": "Competitive Forex spreads with FxPro. Start trading 74% of retail CFD accounts lose money.. Secure funding methods. 2100+ Trading Instruments: FX, Metals, CFDs. MT4 Platform. Join.",
+   "DisplayUrl": "promo.fxpro.com/Trading/Online",
+   "DestinationUrl": "https://promo.fxpro.com/en/promo-forex",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72568165956503,
+   "AdvertiserName": "SERVICIOS COMERCIALES AMAZON MEXICO S DE RL DE CV",
+   "AdvertiserId": 4295011621,
+   "Title": "Compra mercado forex - mercado forex en Amazon.com.mx",
+   "Description": "Encuentra ofertas de mercado forex en Libros de Amazon.. Envíos gratis con entrega rápida en millones de productos Prime de México y EEUU.",
+   "DisplayUrl": "www.amazon.com.mx/libros/precios_bajos",
+   "DestinationUrl": "https://www.amazon.com.mx/s/?ie=UTF8&keywords=mercado+forex&index=aps",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72362081576885,
+   "AdvertiserName": "Seeking Alpha ltd.",
+   "AdvertiserId": 4295149098,
+   "Title": "Forex Trading - Learn How To Trade Forex",
+   "Description": "Unlock Top Investing Ideas with Seeking Alpha's Trusted Market Research and Analysis. Get Exclusive Access to Stock Picks, Market Trends, and Premium Investment Content.",
+   "DisplayUrl": "seekingalpha.com",
+   "DestinationUrl": "https://seekingalpha.com/article/4448144-what-is-forex-trading",
+   "AssetJson": ""
+  },
+  {
+   "AdId": 72224644976912,
+   "AdvertiserName": "Kateryna Lobotenko",
+   "AdvertiserId": 4295079345,
+   "Title": "#1 FX Trading Platform - Best Trading App For Forex",
+   "Description": "Best forex trading. Forex trading beginners. Forex trading apps.. Compare the top forex brokers. Join 33M+ users and experience powerful FX trading!",
+   "DisplayUrl": "simple-invest.info/Forex-Trading/Platform",
+   "DestinationUrl": "https://simple-invest.info/en/online-trading.html",
+   "AssetJson": ""
+  }
+ ]
+}

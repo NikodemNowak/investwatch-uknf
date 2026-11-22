@@ -1,0 +1,308 @@
+# Polish (and a few English) patterns used by the text rules.
+# Every entry is a Python regex, matched case-insensitively on cleaned text.
+# Keep patterns narrow: a false "fail" costs an inspector more time than a missed hint.
+
+ad_label:
+  - '(?<!\w)#(?:reklama|ad|ads|sponsored|spons|współpraca|wspolpraca|partnerstwo)\b'
+  - '\breklama\b'
+  - '\bmateriał(?:em)? (?:marketingow\w*|promocyjn\w*|reklamow\w*|sponsorowan\w*)'
+  - '\bsponsorowan\w*'
+  - '\bsponsor(?:em|ami|zy|a|uje|ują|owany)?\b'
+  - '\bpartner\w* (?:bloga|kanału|odcinka|serwisu|podcastu|strony)\b'
+  - '\bwe współpracy z\b'
+  - '\bwspółpraca (?:reklamowa|płatna|z)\b'
+  - '\bpłatn\w* (?:współprac\w*|partnerstw\w*)'
+  - '\bpartnerstwo płatne\b'
+  - '\b(?:paid partnership|sponsored|advertisement)\b'
+
+cta:
+  - '\b(?:załóż|zakładam|otwórz|otwórzcie|załóżcie|zarejestruj\w*)\s+(?:\w+\s+)?konto'
+  # The imperative only: "z dumą dołączamy" (news about a sponsorship) is not a call to action.
+  - '\bdołącz(?:cie)?\b'
+  - '\blink\w* (?:\w+ ){0,2}w (?:opisie|bio)\b'
+  - '\bkliknij\b'
+  - '\bzapisz się\b'
+
+affiliate_link:
+  - '[?&](?:ref|aff|affiliate|partner|utm_[a-z]+|promo)='
+
+referral_phrase:
+  - '\bz (?:mojego|naszego) linku\b'
+  - '\b(?:mój|moim|naszym) linkiem\b'
+  - '\blink(?:iem)? (?:polecający|afiliacyjn\w*|partnerski)'
+  - '\bz (?:tego )?linku (?:w|z) (?:opisie|bio)\b'
+  - '\blink\w* w bio\b'
+  - '\b(?:z|przez) (?:mojego|naszego) (?:kodu|polecenia)\b'
+
+promo_code:
+  - '\bkod(?:em)?(?:\s+(?:rabatowy|promocyjny|polecający))?:?\s+[A-Z0-9]{4,}\b'
+
+bonus:
+  - '\bbonus\w*\b'
+  - '\b(?:prezent|nagroda) na start\b'
+  - '\b\d+\s?(?:zł|PLN|USD|EUR) na start\b'
+  - '\b(?:darmow\w*|bezpłatn\w*) (?:akcj\w*|ETF\w*|udział\w*)\b'
+  - '\bodbierz\w* (?:\w+ ){0,2}(?:bonus|nagrod|prezent|akcj|zł)\w*'
+
+# Promotional offers that are not claims of gains (fee waivers): still promotional material.
+promo_offer:
+  - '\bbez prowizji\b'
+  - '\b0\s?% prowizji\b'
+  - '\bzerow\w* prowizj\w*'
+
+# Explicit statements that a mention is not paid promotion (M1 negative evidence).
+no_promo:
+  - '\bbez (?:żadnych )?(?:linków|reflinków|kodów)\b'
+  - '\bnie jest (?:to )?(?:reklam\w*|materiał\w* sponsorowan\w*|współprac\w*)'
+  - '\bniesponsorowan\w*'
+  - '\bnikt (?:mi )?(?:za to )?nie (?:płaci|zapłacił)'
+  - '\bnie (?:jest|był\w*) sponsorowan\w*'
+
+legal_form:
+  - '\bS\.\s?A\.(?!\w)'
+  - '\bsp\.\s?z\s?o\.\s?o\.(?!\w)'
+  - '\bsp\.\s?k\.(?!\w)'
+  - '\bspółka akcyjna\b'
+  - '\b(?:Ltd|Limited|GmbH|AG|SE|plc|B\.V\.|N\.V\.|S\.A\.S|LLC|Inc)\b\.?'
+
+gains_claim:
+  - '\bzarabia\w*'
+  - '\bzarobi\w*'
+  - '\bzarobił\w*'
+  - '\bzarób\w*'
+  - '\bzysk\w*'
+  - '\bstop[aęy] zwrotu\b'
+  - '\bzwrot\w* z inwestycji\b'
+  - '(?<![\w])\+\s?\d+(?:[.,]\d+)?\s?%'
+  - '\d+(?:[.,]\d+)?\s?%\s+(?:zysk\w*|zwrot\w*|rocznie|miesięcznie|w (?:skali )?(?:roku|rok|miesiąc\w*))'
+  - '\b(?:\d+|dwa|trzy|pięć|dziesięć)\s?[×x]\s?(?:więcej|wyżej)\b'
+  - '\bpodw(?:oi|aj)\w*'
+  - '\bminimum \d+\s?%'
+  - '\b(?:pewn\w*|gwarantowan\w*) (?:zysk|zwrot|dochód)\w*'
+
+risk_warning:
+  - '\bwiąż\w* się z (?:\w+\s+){0,3}ryzyk\w*'
+  - '\bryzyk\w* (?:szybkiej )?(?:utraty|straty|strat)\b'
+  - '\butrat\w* (?:części|całości|wszystkich|zainwestowan\w*)'
+  - '\bmożesz (?:stracić|utracić)\b'
+  - '\b(?:kapitał|środki) (?:jest |są )?narażon\w*'
+  - '\bodnotowuje straty\b'
+  - '\b(?:wysok\w*|duż\w*|znaczn\w*|istotn\w*|podwyższon\w*|ogrom\w*) ryzyk\w*'
+  - '\bdźwigni\w* finansow\w*'
+  - '\bwartość \w+(?: \w+)? może (?:zarówno )?(?:rosnąć|spadać|maleć|spaść)'
+  - '\bzłożonymi instrumentami\b'
+  - '\binwestowanie (?:w \w+(?: \w+)? )?wiąże się\b'
+  - '\b(?:lose money|losing money|high risk|capital (?:is )?at risk|complex instruments)\b'
+  - '\b(?:you|investors?) (?:may|could|can|might) lose\b'
+  - '\binvesting involves (?:\w+ )?risk'
+  - '\blose (?:part|some|all) (?:or all )?of (?:your|the) (?:capital|investment|money)'
+
+past_performance:
+  - '\bwynik\w* (?:za|z|w) (?:lat[ao]?|rok\w*|okres\w*|ostatni\w*|\d{4})'
+  - '\bza lata \d{4}'
+  - '\bw (?:ciągu )?ostatnich \d+ (?:lat\w*|miesi\w*)'
+  - '(?<![\w])\+\s?\d+(?:[.,]\d+)?\s?% (?:w|za|przez) (?:\d+|ostatni\w*) ?(?:lat\w*|rok\w*|miesi\w*)?'
+  - '\b(?:zarobił|osiągnął|osiągnęł|wypracował|wypracowa(?!ć\b))\w*'
+  - '\b\d+ trafion\w*'
+  - '\btrafion\w* sygnał\w*'
+  - '\bhistoryczn\w* (?:wynik|stop|zwrot)\w*'
+  - '\bwynik\w* historyczn\w*'
+  - '\bstop[aęy] zwrotu (?:za|w|z) (?:\d{4}|ostatni\w*|lat\w*|rok\w*)'
+  - '\bnajlepszy wynik\b'
+
+past_performance_disclaimer:
+  - '\bwynik\w* (?:historyczn\w*|osiągnięt\w* w przeszłości|z przeszłości|przeszł\w*) nie (?:stanowi\w*|są|jest|gwarantuj\w*)'
+  - '\bnie (?:stanowi\w*|jest|są) (?:wiarygodn\w* )?(?:wskaźnik\w*|gwarancj\w*) (?:\w+ )?(?:przyszłych|osiągnięcia)'
+  - '\bpast performance is not\b'
+
+forecast:
+  # Explicit claims about future returns (rule 15 fails without a disclaimer).
+  - '\bdo \d+(?:[.,]\d+)?\s?% (?:rocznie|miesięcznie|w skali|w rok|w miesiąc)'
+  - '\b(?:zrobicie|zarobisz|zarobicie|osiągniesz|osiągniecie|zyskasz|zyskacie|podwoisz|pomnożysz) (?:\w+ ){0,3}\d+(?:[.,]\d+)?\s?%'
+  - '\bw (?:tym|przyszłym|kolejnym|nadchodzącym) roku (?:\w+ ){0,3}(?:zarob|zrob|osiągn|zysk|wzroś|wzrosn)(?!\w*ł[aoyi]?\b)\w*'
+  - '\bminimum \d+\s?%'
+  - '\b(?:wzrośnie|wzrosną|urośnie|urosną|podwoi się|podwoją się|zyska|zyskają) (?:\w+ ){0,3}(?:o |do )?\d+(?:[.,]\d+)?\s?%'
+  - '\bcel(?:em)? cenow\w*'
+  - '\bpotencjał\w* (?:wzrostu|zysku|zwrotu) (?:\w+ ){0,2}\d+(?:[.,]\d+)?\s?%'
+
+# Weaker forecast words: count only with a return/price figure in the same sentence.
+forecast_weak:
+  # "Spodziewany wynik" alone is a calculator label or a product description; with a figure
+  # in the sentence ("oczekiwany zysk 12% rocznie") it is a forecast.
+  - '\b(?:oczekiwan\w*|spodziewan\w*|planowan\w*|prognozowan\w*|przewidywan\w*) (?:roczn\w* )?(?:zysk|stop\w* zwrotu|zwrot|wynik|rentownoś)\w*'
+  - '\bprognoz\w*'
+  - '\bprzewiduj\w*'
+  - '\bprzewidywan\w*'
+  - '\bspodziewa\w*'
+
+forecast_target:
+  - '\d+(?:[.,]\d+)?\s?%'
+  - '\b(?:zysk|zwrot|stop\w* zwrotu|rentownoś|wycen|kurs|cen[aęy]|notowa)\w*'
+
+# Contexts where a forecast-like phrase is not a forecast of investment results.
+forecast_exclusion:
+  - '\b(?:umow\w*|regulamin\w*|ustaw\w*|przepis\w*|statut\w*|prawo|rozporządzeni\w*|taryf\w*) (?:\w+ ){0,2}przewiduj\w*'
+  - '\bprognoz\w* pogody\b'
+  - '\b(?:kupon\w*|oprocentowani\w*|lokat\w*)\s+(?:\w+\s+){0,3}do \d+(?:[.,]\d+)?\s?%'
+  # The investor's own expectation, explained in education / product mechanics.
+  - '\b(?:przewidujesz|spodziewasz|oczekujesz|przewidujecie|spodziewacie|spodziewają|przewidują|oczekują)\b'
+  - '\b(?:gdy|jeśli|jeżeli|kiedy) (?:\w+ ){0,3}(?:przewidyw|spodziew|oczekiw)\w*'
+  - '\b(?:zależności od|Twoj\w*|swoj\w*) (?:\w+ ){0,2}(?:oczekiwan|przewidywan)\w* (?:\w+ ){0,2}(?:stop\w* zwrotu|kierunk\w*|zysk\w*)'
+  - '\b(?:poziom\w*|profil\w*|horyzont\w*) [^.\n]{0,40}(?:oczekiwan|przewidywan)\w* stop\w* zwrotu'
+
+forecast_disclaimer:
+  - '\bprognoz\w* (?:\w+ ){0,4}nie (?:jest|są|stanowi\w*|gwarantuj\w*)'
+  - '\bnie (?:stanowi\w*|jest|są) (?:wiarygodn\w* )?wskaźnik\w* (?:\w+ )?przyszłych'
+  - '\bnie (?:jest|stanowi\w*) (?:\w+ ){0,2}obietnic\w*'
+  - '\b(?:rzeczywist\w*|faktyczn\w*) wynik\w* mog\w* (?:\w+ ){0,2}(?:niższ|inn|ujemn)\w*'
+
+tax_mention:
+  # References to tax treatment (benefits, exemptions, deductions), not bare product names.
+  - '\bkorzyś\w* podatkow\w*'
+  - '\bulg\w* podatkow\w*'
+  - '\bpreferencj\w* podatkow\w*'
+  - '\boptymalizacj\w* podatkow\w*'
+  - '\btarcz\w* podatkow\w*'
+  - '\bzwolni\w* (?:\w+ ){0,2}z (?:\d+\s?% )?(?:podat\w*|PIT|Belki)'
+  - '\bbez (?:\d+\s?% )?(?:podatku|Belki)\b'
+  - '\bodlicz\w* (?:\w+ ){0,4}od (?:podatku|dochodu|PIT)'
+  - '\bnie płaci\w* (?:\w+ ){0,2}podatku'
+  - '\boszczędz\w* (?:\w+ ){0,2}na podatk\w*'
+  - '\bzwrot\w* podatku\b'
+  - '\bpodatku Belki\b'
+  - '\b(?:IKE|IKZE)\w* (?:\w+ ){0,6}(?:podat\w*|Belk\w*|ulg\w*|odlicz\w*)'
+  - '\bopodatkowan\w* (?:\w+ ){0,2}(?:preferencyjn\w*|niższ\w*|zerow\w*)'
+
+tax_disclaimer_individual:
+  - '\bzależ\w* od (?:indywidualnej|indywidualnych|osobistej) sytuacji'
+  - '\bindywidualnej sytuacji (?:klienta|podatkowej|inwestora)'
+
+tax_disclaimer_change:
+  - '\b(?:może|mogą) (?:ulec )?zmian\w*'
+  - '\b(?:może|mogą) się zmienić\b'
+  - '\bpodlega\w* zmianom\b'
+
+supervisor_mention:
+  - '\bKNF\b'
+  - '\bKomisj\w* Nadzoru Finansowego\b'
+  - '\bnadzorowan\w*'
+  - '\bnadz(?:ór|oru|orem|orze) (?:finansow\w*|KNF|Komisji)'
+  - '\bwymog\w* nadzorcz\w*'
+  - '\borgan\w* nadzoru\b'
+  - '\bregulowan\w* przez\b'
+  - '\b(?:CySEC|BaFin|FCA|ESMA|AMF|CONSOB)\b'
+
+supervisor_approval:
+  - '\b(?:zatwierdzon\w*|zaakceptowan\w*|zaaprobowan\w*|rekomendowan\w*|polecan\w*|certyfikowan\w*|sprawdzon\w*|zweryfikowan\w*|gwarantowan\w*|autoryzowan\w*) (?:\w+ ){0,2}przez (?:KNF|Komisj\w* Nadzoru|nadzór|regulator\w*|organ\w* nadzoru)'
+  - '\b(?:aprobat\w*|zatwierdzeni\w*|akceptacj\w*|rekomendacj\w*|certyfikat\w*|gwarancj\w*) (?:\w+ )?(?:KNF|Komisji Nadzoru)'
+  - '\bKNF (?:zatwierdził\w*|zaakceptował\w*|poleca|rekomenduje|gwarantuje|potwierdził\w*)'
+  - '\b(?:KNF|regulator\w*|Komisja) (?:\w+ ){0,2}(?:sprawdził\w*|zatwierdził\w*|zweryfikował\w*|zaakceptował\w*) (?:\w+ )?(?:nasz\w* )?(?:produkt|fundusz|ofert|inwestycj)\w*'
+
+safety_claim:
+  - '\bbezpieczn\w*'
+  - '\bgwarancj\w*'
+  - '\bgwarantowan\w*'
+  - '\bgwarantuj\w*'
+  - '\bpewn[aeyi]\w*'
+  - '\bbez ryzyka\b'
+  - '\bchronion\w*'
+  - '\bnic nie ryzykuj\w*'
+  - '\bspa(?:ć|cie|łbyś|ła?byś) spokojnie\b'
+  - '\bnie strac(?:isz|icie)\b'
+
+comparison:
+  - '\bnajlepsz\w*'
+  - '\b(?:więcej|lepiej|lepszy|lepsze|taniej|tańszy|wyżej|wyższy) niż\b'
+  - '\bw porównaniu (?:z|do)\b'
+  - '\bnajtańsz\w*'
+  - '\b(?:\d+|dwa|trzy)\s?[×x] więcej\b'
+
+currency_warning:
+  - '\bkurs\w* walut\w*'
+  - '\bryzyk\w* walutow\w*'
+
+fees_warning:
+  - '\b(?:prowizj|opłat|obciążeń|kosztów)\w* (?:\w+ ){0,4}(?:wynik|stop\w* zwrotu)'
+  - '\b(?:po|przed|bez uwzględnienia) (?:potrąceniu |odliczeniu )?(?:prowizji|opłat|kosztów)'
+  - '\b(?:nie )?uwzględnia\w* (?:\w+ ){0,3}(?:opłat|prowizj|koszt|obciążeń)\w*'
+
+# Module 3 (art. 76 UoIF) signals.
+advisory_personalised:
+  - '\bpersonal (?:account )?(?:manager|advis[oe]r|analyst|assistant|broker)\w*'
+  - '\b(?:osobist\w*|dedykowan\w*|własn\w*) (?:menedżer\w*|manager\w*|opiekun\w*|doradc\w*|analityk\w*|asystent\w*)'
+  - '\bindywidualn\w* doradztw\w*'
+  - '\bdoradztw\w* indywidualn\w*'
+  - '\btailored to (?:your|you)\b'
+  - '\bpersonali[sz]ed (?:investment |trading )?(?:advice|recommendations?|strateg\w*|portfolio)'
+  - '\bdopasowan\w* (?:\w+ ){0,2}(?:do|pod) Tw\w*'
+  - '\bdob(?:iorę|ierzemy|ieramy|ierze|ranie|ran\w*) (?:\w+ ){0,3}(?:do|pod) Tw\w*'
+  - '\bdob(?:iorę|ierzemy|ieramy|ierze)\b'
+  - '\bpod Twoją sytuacj\w*'
+  - '\bszyt\w* na miarę\b'
+  - '\bindywidualn\w* (?:strategi|portfel|rekomendacj|doradztw|plan)\w*'
+  - '\bspersonalizowan\w* (?:rekomendacj|porad|portfel|strategi|plan)\w*'
+  - '\bankiet\w* (?:inwestor|potrzeb|klient|profil\w* ryzyk|MiFID)\w*'
+  - '\bprofil\w* ryzyka\b'
+  - '\bkonsultacj\w* (?:1:1|1 na 1|indywidualn\w*)'
+  - '\bprzejrz\w* Tw\w* portfel'
+  - '\bTwój osobist\w*'
+  - '\bTw\w* (?:budżet\w*|oszczędnoś\w*|cel\w* inwestycyjn\w*|horyzont\w*|sytuacj\w* finansow\w*)'
+  - '\b(?:ile|jakie) masz (?:oszczędności|pieniędzy|środków|kapitału)'
+
+advisory_instruments:
+  - '\bakcj[ieaąo]\w*'
+  - '\bobligacj\w*'
+  - '\bETF\w*'
+  - '\bfundusz\w* inwestycyjn\w*'
+  - '\bCFD\w*'
+  - '\bkontrakt\w* (?:na|terminow\w*|CFD)'
+  - '\bopcj\w* (?:na|binarn\w*|walutow\w*)'
+  - '\bcertyfikat\w* inwestycyjn\w*'
+  - '\binstrument\w* finansow\w*'
+
+advisory_buy_sell:
+  - '\bsygnał\w* (?:transakcyjn|inwestycyjn|tradingow|dzienn|kupna|sprzedaży|giełdow)\w*'
+  - '\b(?:trading|daily|buy|sell|forex) signals?\b'
+  - '\bkompleksow\w* doradztw\w* analityk\w*'
+  - '\b(?:investment|trading) (?:advice|recommendations?|tips)\b'
+  - '\bsygnał\w* (?:kup|sprzeda|transakcyjn)\w*'
+  - '\bkup/sprzeda\w*'
+  - '\brekomend\w* (?:zakup|sprzedaż|kupno)\w*'
+  - '\b(?:które|co|jakie) (?:[\w-]+ ){0,4}(?:kupić|sprzedać|trzymać)\b'
+  - '\bpowiemy (?:Ci )?(?:\w+ )?co kupić\b'
+  - '\bwchodzimy w\b'
+  - '\b(?:do|na) (?:kupienia|sprzedania|zakupu)\b'
+  - '\b(?:kupuj|sprzedawaj|trzymaj)(?:cie)?,? (?:gdy|kiedy|jak|teraz|od razu)\b'
+  - '\bdam (?:Ci )?sygnał\w*'
+  - '\brekomend\w* (?:\w+ ){0,1}konkretn\w*'
+  - '\bkonkretn\w* (?:\d+ )?(?:spół\w*|akcj\w*|fundusz\w*|ETF\w*|obligacj\w*|instrument\w*)'
+  - '\bkopiuj\w* (?:moje )?(?:transakcj|pozycj)\w*'
+
+advisory_poland:
+  - '\b\d[\d ]*\s?zł\b'
+  - '\bPLN\b'
+  - '\babonament\w*'
+  - '\bcennik\w*'
+  - '\bBLIK\b'
+  - '\bzapisy\b'
+  - '\bGPW\b'
+  - '\bw Polsce\b'
+  - '\bul\. '
+
+advisory_management:
+  # Case-sensitive: the Polish word "mam" ("mam ukończone 18 lat") is not a MAM account.
+  - '(?-i:\b(?:PAMM|MAM|LAMM)\b)'
+  - '\bmanaged (?:accounts?|portfolios?)\b'
+  - '\bkont\w* zarządzan\w*'
+  - '\brachun\w* zarządzan\w*'
+  - '\b(?:portfolio|account|wealth) management\b'
+  - '\btrades? (?:your|on your|for you|with your) (?:money|funds|capital|behalf)'
+  - '\bwe (?:trade|invest) (?:for you|on your behalf|your money)'
+  - '\bzarządzamy Tw\w*'
+  - '\bw Twoim imieniu\b'
+  - '\bzarządzani\w* (?:Tw\w* )?(?:portfel\w*|kapitał\w*)'
+  - '\bzarządza\w* (?:Tw\w* |cudz\w* )?(?:portfel\w*|kapitał\w*|rachunk\w*|środk\w*|pieniędz\w*)'
+  - '\bpowierz\w* (?:nam )?(?:swój |swoje )?(?:kapitał|środki|pieniądze)'
+  - '\bprowadzimy Tw\w* rachun\w*'
+  - '\bdostęp\w* do (?:swojego|Twojego) rachunk\w*'
+

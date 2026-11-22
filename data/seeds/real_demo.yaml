@@ -1,0 +1,62 @@
+# Real data for `make demo-real` (python -m investwatch.demo --real): every row is fetched live
+# through a compliant path (ADR 0008, docs/DATA_ACCESS.md). Nothing here comes from old
+# scraping: platform pages are never fetched, YouTube is read only through the Data API
+# (skipped without YOUTUBE_API_KEY), and each website goes through InvestWatchBot, which
+# obeys robots.txt and records a refusal as a `blocked` item.
+#
+# Names start with "Realne:" so the Sources page and the summary keep them apart from the
+# fictional "Demo:" material. Kept small: one run per day, staggered minutes.
+
+sources:
+  # --- Microsoft Ad Library API (official, no key): ads served in Poland + landing pages ---
+  - {name: "Realne: Microsoft Ads – forex", collector: microsoft_ad_library, target: "24:forex", module_hint: m2_risk_disclosure, cron: "11 4 * * *", enabled: true}
+  - {name: "Realne: Microsoft Ads – CFD", collector: microsoft_ad_library, target: "24:CFD", module_hint: m2_risk_disclosure, cron: "13 4 * * *", enabled: true}
+  - {name: "Realne: Microsoft Ads – trading", collector: microsoft_ad_library, target: "12:trading platform", module_hint: m2_risk_disclosure, cron: "17 4 * * *", enabled: true}
+  - {name: "Realne: Microsoft Ads – inwestycje", collector: microsoft_ad_library, target: "12:inwestycje", module_hint: m2_risk_disclosure, cron: "19 4 * * *", enabled: true}
+  - {name: "Realne: Microsoft Ads – kryptowaluty", collector: microsoft_ad_library, target: "12:kryptowaluty", module_hint: m2_risk_disclosure, cron: "23 4 * * *", enabled: true}
+  - {name: "Realne: Microsoft Ads – bitcoin", collector: microsoft_ad_library, target: "12:bitcoin", module_hint: m2_risk_disclosure, cron: "29 4 * * *", enabled: true}
+  # Brokers from the KNF register (foreign firms with a notification for Poland, and XTB).
+  - {name: "Realne: Microsoft Ads – XTB", collector: microsoft_ad_library, target: "12:XTB", module_hint: m2_risk_disclosure, cron: "31 4 * * *", enabled: true}
+  - {name: "Realne: Microsoft Ads – FxPro", collector: microsoft_ad_library, target: "12:FxPro", module_hint: m2_risk_disclosure, cron: "37 4 * * *", enabled: true}
+  - {name: "Realne: Microsoft Ads – Swissquote", collector: microsoft_ad_library, target: "12:Swissquote", module_hint: m2_risk_disclosure, cron: "41 4 * * *", enabled: true}
+  - {name: "Realne: Microsoft Ads – eToro", collector: microsoft_ad_library, target: "12:eToro", module_hint: m2_risk_disclosure, cron: "43 4 * * *", enabled: true}
+  - {name: "Realne: Microsoft Ads – Plus500", collector: microsoft_ad_library, target: "12:Plus500", module_hint: m2_risk_disclosure, cron: "47 4 * * *", enabled: true}
+  - {name: "Realne: Microsoft Ads – Capital.com", collector: microsoft_ad_library, target: "12:Capital.com", module_hint: m2_risk_disclosure, cron: "53 4 * * *", enabled: true}
+  - {name: "Realne: Microsoft Ads – IC Markets", collector: microsoft_ad_library, target: "12:IC Markets", module_hint: m2_risk_disclosure, cron: "59 4 * * *", enabled: true}
+
+  # --- M2: KNF-registered firms' own Polish pages (robots.txt allowed on 2026-11-21) -------
+  - {name: "Realne: XTB – kod promocyjny", collector: web, target: "https://www.xtb.com/pl/edukacja/kod-promocyjny-xtb", module_hint: m2_risk_disclosure, cron: "3 5 * * *", enabled: true}
+  - {name: "Realne: XTB – plany inwestycyjne", collector: web, target: "https://www.xtb.com/pl/plany-inwestycyjne", module_hint: m2_risk_disclosure, cron: "5 5 * * *", enabled: true}
+  - {name: "Realne: XTB – oferta", collector: web, target: "https://www.xtb.com/pl/oferta", module_hint: m2_risk_disclosure, cron: "7 5 * * *", enabled: true}
+  - {name: "Realne: Admirals – strona PL", collector: web, target: "https://admiralmarkets.com/pl", module_hint: m2_risk_disclosure, cron: "9 5 * * *", enabled: true}
+  - {name: "Realne: Saxo – strona PL", collector: web, target: "https://www.home.saxo/pl-pl", module_hint: m2_risk_disclosure, cron: "11 5 * * *", enabled: true}
+  - {name: "Realne: bossa.pl – strona główna", collector: web, target: "https://bossa.pl/", module_hint: m2_risk_disclosure, cron: "13 5 * * *", enabled: true}
+
+  # --- M1: third parties promoting brokers (websites; robots.txt allowed) ------------------
+  - {name: "Realne: Kontomaniak – ranking kont maklerskich", collector: web, target: "https://www.kontomaniak.pl/ranking-kont-maklerskich", module_hint: m1_third_party_ad, cron: "17 5 * * *", enabled: true}
+  - {name: "Realne: Moneteo – ranking kont maklerskich", collector: web, target: "https://moneteo.com/rankingi/konta-maklerskie", module_hint: m1_third_party_ad, cron: "19 5 * * *", enabled: true}
+  - {name: "Realne: Bankier – IKE w XTB", collector: web, target: "https://www.bankier.pl/smart/ike-konto-maklerskie-w-xtb", module_hint: m1_third_party_ad, cron: "23 5 * * *", enabled: true}
+  - {name: "Realne: ICOBench – grupy Telegram z sygnałami", collector: web, target: "https://icobench.com/pl/akademia/najlepsze-grupy-telegram-dla-sygnalow-forex/", module_hint: m1_third_party_ad, cron: "29 5 * * *", enabled: true}
+  - {name: "Realne: Inwestomat (sitemap)", collector: site, target: "3:inwestomat.eu", module_hint: m1_third_party_ad, cron: "31 5 * * *", enabled: true}
+  - {name: "Realne: Comparic (sitemap)", collector: site, target: "3:comparic.pl", module_hint: m1_third_party_ad, cron: "37 5 * * *", enabled: true}
+
+  # --- M3: live sites of entities on the KNF public warning list (robots.txt allowed) ------
+  - {name: "Realne: lista ostrzeżeń KNF – traderprof.com", collector: web, target: "https://traderprof.com/", module_hint: m3_shadow_advisory, cron: "41 5 * * *", enabled: true}
+  - {name: "Realne: lista ostrzeżeń KNF – esperio.org", collector: web, target: "https://www.esperio.org/", module_hint: m3_shadow_advisory, cron: "43 5 * * *", enabled: true}
+  - {name: "Realne: lista ostrzeżeń KNF – teletrade.org", collector: web, target: "https://www.teletrade.org/", module_hint: m3_shadow_advisory, cron: "47 5 * * *", enabled: true}
+  - {name: "Realne: lista ostrzeżeń KNF – quomarkets.com", collector: web, target: "https://www.quomarkets.com/", module_hint: m3_shadow_advisory, cron: "53 5 * * *", enabled: true}
+  - {name: "Realne: lista ostrzeżeń KNF – dowmarkets.com", collector: web, target: "https://dowmarkets.com/", module_hint: m3_shadow_advisory, cron: "59 5 * * *", enabled: true}
+  - {name: "Realne: lista ostrzeżeń KNF – wiwn.pl", collector: web, target: "https://wiwn.pl/", module_hint: m3_shadow_advisory, cron: "3 6 * * *", enabled: true}
+  - {name: "Realne: lista ostrzeżeń KNF – capital-trade.eu (zmiana treści)", collector: web, target: "https://capital-trade.eu/", module_hint: m3_shadow_advisory, cron: "7 6 * * *", enabled: true}
+  # Counter-examples and grey zone (licensed firm, legal service, portfolio services).
+  - {name: "Realne: mBank – family office (licencja)", collector: web, target: "https://www.mbank.pl/private-banking/family-office", module_hint: m3_shadow_advisory, cron: "11 6 * * *", enabled: true}
+  - {name: "Realne: Grant Thornton – family office (usługa prawna)", collector: web, target: "https://grantthornton.pl/usluga/kancelaria-prawna/family-office/", module_hint: m3_shadow_advisory, cron: "13 6 * * *", enabled: true}
+  - {name: "Realne: PPCG – portfele inwestycyjne", collector: web, target: "https://ppcg.com.pl/portfele-inwestycyjne/", module_hint: m3_shadow_advisory, cron: "17 6 * * *", enabled: true}
+  - {name: "Realne: Longterm – strona główna", collector: web, target: "https://www.longterm.pl/", module_hint: m3_shadow_advisory, cron: "19 6 * * *", enabled: true}
+
+  # --- M1: YouTube Data API v3 (only with YOUTUBE_API_KEY; otherwise "wymaga klucza") -----
+  - {name: "Realne: YouTube – oznaczone współprace (wzorzec)", collector: youtube, target: "ids:Fu8P_wcaiM0,rM4VUh10mLA,nTGwF8vl38Q", module_hint: m1_third_party_ad, cron: "23 6 * * *", enabled: true}
+  - {name: "Realne: YouTube – kody polecające", collector: youtube, target: "ids:OlPBRkwoAd8,j8K-3T0qMEU,2gqjywrahsM,OmdNtgHPD1Q", module_hint: m1_third_party_ad, cron: "29 6 * * *", enabled: true}
+  - {name: "Realne: YouTube – seria z kodem MLODY", collector: youtube, target: "ids:xFcJ5lyptdw,E9LsQmATyTM,Csl-47ZPO-M,l7l9A2pByvo,-nORyzNycXE,9YMkZbSTESQ,3lMgfADcYpE", module_hint: m1_third_party_ad, cron: "31 6 * * *", enabled: true}
+  - {name: "Realne: YouTube – seria z kodem INWESTOR", collector: youtube, target: "ids:sJGyR_tIgY0,v7mXIAlnp2w,mW9GpagqGJo,JInNobY87oI,L-P0Dq610CU,v-yHR7kOeVs,rujpLtYJn1U", module_hint: m1_third_party_ad, cron: "37 6 * * *", enabled: true}
+  - {name: "Realne: YouTube – inne", collector: youtube, target: "ids:2HPdLP1CMEo,j4amiLUeeJE,MabN00B4kK0,qHZTx59P3AM,P5pUg9mHcVI,yD9LiZ0dKDY", module_hint: m1_third_party_ad, cron: "41 6 * * *", enabled: true}

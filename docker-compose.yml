@@ -1,0 +1,239 @@
+# One command: `docker compose up --build`  ->  http://localhost:8080  (API: http://localhost:8000)
+# GPU: docker compose -f docker-compose.yml -f docker-compose.gpu.yml up --build
+# Only the dashboard (8080) and the API (8000) are published; everything else is internal.
+# Nothing waits for the model download (`ollama-init`): until it finishes, findings come from
+# the rules and say "model review unavailable"; queued reviews are retried afterwards.
+
+# Secrets come only from .env (git-ignored): `cp .env.example .env` and change the passwords.
+x-env: &env
+  env_file:
+    - path: .env
+      required: true
+
+# api, workers, beat and seed share one image; only `api` builds it (parallel builds of the
+# same tag collide), the others reuse it. Image names carry the project name (default: the
+# directory, `investwatch`), so `COMPOSE_PROJECT_NAME=x` / `-p x` copies never overwrite them.
+x-backend: &backend
+  <<: *env
+  image: ${COMPOSE_PROJECT_NAME:-investwatch}-backend:latest
+  pull_policy: never
+  volumes:
+    - ./data/fixtures:/app/data/fixtures:ro
+    - ./data/seeds:/app/data/seeds:ro
+    - ./data/registry:/app/data/registry:ro
+    - ./data/golden:/app/data/golden:ro
+    - ./data/demo:/app/data/demo:ro
+  restart: unless-stopped
+
+x-backend-deps: &backend-deps
+  postgres: { condition: service_healthy }
+  redis: { condition: service_healthy }
+  minio: { condition: service_healthy }
+  seed: { condition: service_completed_successfully }
+
+x-worker-health: &worker-health
+  test: ["CMD", "python", "-m", "investwatch.jobs.health", "worker"]
+  interval: 30s
+  timeout: 15s
+  start_period: 30s
+  retries: 3
+
+services:
+  frontend:
+    build: ./frontend
+    depends_on:
+      api: { condition: service_healthy }
+    ports: ["8080:80"]
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1/ || exit 1"]
+      interval: 15s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  api:
+    <<: *backend
+    build: ./backend
+    pull_policy: build
+    depends_on: *backend-deps
+    # frontend/nginx.conf proxies /api and /socket.io to api:8000.
+    ports: ["8000:8000"]
+
+  worker-scrape:
+    <<: *backend
+    command: >-
+      celery -A investwatch.jobs.celery_app worker -Q scrape -c 2 -n celery@%h --loglevel=INFO
+    depends_on: *backend-deps
+    healthcheck: *worker-health
+
+  worker-analyze:
+    <<: *backend
+    command: >-
+      celery -A investwatch.jobs.celery_app worker -Q analyze,maintenance -c 2 -n celery@%h
+      --loglevel=INFO
+    depends_on:
+      <<: *backend-deps
+      ai: { condition: service_healthy }
+    healthcheck: *worker-health
+
+  # Analyst-initiated work only ("Sprawdź", "Zgłoś materiał"): fetch + render + rules on its own
+  # worker, so a check never waits behind a source crawl (minutes with Crawl-delay) or the
+  # demo's analysis backlog. Its model review goes to `llm_priority` (worker-llm).
+  worker-check:
+    <<: *backend
+    command: >-
+      celery -A investwatch.jobs.celery_app worker -Q check -c 2 -n celery@%h --loglevel=INFO
+    depends_on:
+      <<: *backend-deps
+      ai: { condition: service_healthy }
+    healthcheck: *worker-health
+
+  # LLM second opinion (roadmap 2.2): one review at a time, so a slow CPU model never delays
+  # rules, alerts or scraping. Scale with `--scale worker-llm=N` on a GPU. Analyst checks
+  # ("Sprawdź", "Zgłoś materiał") go to `llm_priority`, drained before the batch queue `llm`
+  # (strict order, not round robin), so they never wait behind a `make demo` backlog.
+  worker-llm:
+    <<: *backend
+    command: >-
+      celery -A investwatch.jobs.celery_app worker -Q llm_priority,llm -c 1 -n celery@%h
+      --loglevel=INFO
+    environment:
+      CELERY_QUEUE_ORDER: priority
+    depends_on:
+      <<: *backend-deps
+      ai: { condition: service_healthy }
+    healthcheck: *worker-health
+
+  beat:
+    <<: *backend
+    command: >-
+      celery -A investwatch.jobs.celery_app beat --schedule /tmp/celerybeat-schedule
+      --loglevel=INFO
+    depends_on: *backend-deps
+    healthcheck:
+      test: ["CMD", "python", "-m", "investwatch.jobs.health", "beat"]
+      interval: 30s
+      timeout: 5s
+      start_period: 90s
+      retries: 3
+
+  seed:
+    <<: *backend
+    command: ["python", "-m", "investwatch.seed"]
+    restart: "no"
+    healthcheck: { disable: true }
+    depends_on:
+      postgres: { condition: service_healthy }
+      minio: { condition: service_healthy }
+
+  ai:
+    <<: *env
+    build: ./ai
+    image: ${COMPOSE_PROJECT_NAME:-investwatch}-ai:latest
+    environment:
+      # Embeddings are on the alert's critical path and share Ollama with the LLM: give a busy
+      # CPU time to answer (missing vectors are backfilled by `embed_missing_posts` anyway).
+      EMBED_TIMEOUT_S: ${EMBED_TIMEOUT_S:-45}
+    # Healthcheck on /health comes from ai/Dockerfile. The service degrades to rules-only
+    # while ollama-init is still pulling models, so it does not wait for it.
+    depends_on:
+      ollama: { condition: service_healthy }
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:0.40.17
+    volumes: ["ollama:/root/.ollama"]
+    environment:
+      # Keep bge-m3 and the LLM resident (a cold load costs seconds on every request) and
+      # serve two requests per model: an embedding or an analyst's review no longer queues
+      # behind a long batch review. Costs one extra context per model (see README, RAM).
+      OLLAMA_KEEP_ALIVE: 30m
+      OLLAMA_MAX_LOADED_MODELS: "2"
+      OLLAMA_NUM_PARALLEL: "2"
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  ollama-init:
+    image: ollama/ollama:0.40.17
+    depends_on:
+      ollama: { condition: service_healthy }
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+      LLM_MODEL: ${LLM_MODEL:-gemma4:e2b-it-qat}
+      EMBED_MODEL: ${EMBED_MODEL:-bge-m3}
+    # Embeddings first (small, used by every post), then the LLM. Retries survive flaky
+    # hackathon Wi-Fi; no other service depends on this one finishing.
+    entrypoint:
+      - /bin/sh
+      - -c
+      - >-
+        for m in "$$EMBED_MODEL" "$$LLM_MODEL"; do
+        for i in 1 2 3 4 5; do ollama pull "$$m" && break; sleep 10; done;
+        done; ollama list
+    restart: "no"
+
+  postgres:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-investwatch}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env (cp .env.example .env)}
+      POSTGRES_DB: ${POSTGRES_DB:-investwatch}
+    volumes: ["postgres:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  redis:
+    # Valkey: BSD-licensed, protocol-compatible fork of Redis (Redis 7.4+ is not OSI-licensed).
+    image: valkey/valkey:8-alpine
+    command: ["valkey-server", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "valkey-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  minio:
+    image: ${MINIO_IMAGE:-cgr.dev/chainguard/minio:latest@sha256:e9cf6b99c226e9539ed0f14b6f00e37b07da153c7ba1f4f8709c807574b471ec}
+    command: ["server", "/data", "--address", ":9000", "--console-address", ":9001"]
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-investwatch}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?set MINIO_ROOT_PASSWORD in .env (cp .env.example .env)}
+    volumes: ["minio:/data"]
+    healthcheck:
+      # The image has bash but neither curl nor wget.
+      test:
+        - CMD
+        - bash
+        - -c
+        - >-
+          exec 3<>/dev/tcp/127.0.0.1/9000
+          && printf 'GET /minio/health/live HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n' >&3
+          && read -r line <&3 && [[ $$line == *200* ]]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  demo-sites:
+    build: ./demo-sites
+    image: ${COMPOSE_PROJECT_NAME:-investwatch}-demo-sites:latest
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1/ || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  postgres:
+  minio:
+  ollama:

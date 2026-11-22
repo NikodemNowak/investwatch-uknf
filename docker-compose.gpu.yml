@@ -1,0 +1,23 @@
+# GPU override: docker compose -f docker-compose.yml -f docker-compose.gpu.yml up --build
+services:
+  ollama:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+  ollama-init:
+    environment:
+      LLM_MODEL: ${GPU_LLM_MODEL:-gemma3:12b}
+  ai:
+    environment:
+      LLM_MODEL: ${GPU_LLM_MODEL:-gemma3:12b}
+      AI_MODE: llm
+  worker-analyze:
+    environment:
+      AI_MODE: llm
+  worker-check:
+    environment:
+      AI_MODE: llm

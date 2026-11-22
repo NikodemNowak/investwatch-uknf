@@ -1,0 +1,834 @@
+{
+  "viewports": {
+    "desktop": [
+      {
+        "text": "PrimeFX24",
+        "bbox": [
+          120.0,
+          19.0,
+          122.7,
+          24.0
+        ],
+        "font_px": 20.0,
+        "font_weight": 700,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.009,
+        "tag_path": "html>body>header>a.logo"
+      },
+      {
+        "text": "Handluj złotem bez prowizji.",
+        "bbox": [
+          120.0,
+          118.0,
+          1200.0,
+          57.6
+        ],
+        "font_px": 48.0,
+        "font_weight": 800,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.057,
+        "tag_path": "html>body>main>section.hero>h1"
+      },
+      {
+        "text": "Zarabiaj do 25% miesięcznie dzięki naszym sygnałom AI.",
+        "bbox": [
+          120.0,
+          191.6,
+          1200.0,
+          42.0
+        ],
+        "font_px": 28.0,
+        "font_weight": 600,
+        "color": "#0a7d32",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.092,
+        "tag_path": "html>body>main>section.hero>p.lead"
+      },
+      {
+        "text": "Dołącz do 120 000 inwestorów, którzy już zarabiają.",
+        "bbox": [
+          120.0,
+          289.6,
+          1200.0,
+          24.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.139,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Otwórz konto w 3 minuty.",
+        "bbox": [
+          120.0,
+          337.6,
+          1200.0,
+          24.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.162,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Bonus powitalny 100% od pierwszej wpłaty.",
+        "bbox": [
+          120.0,
+          385.6,
+          1200.0,
+          24.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.185,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Sygnały AI analizują rynek złota 24 godziny na dobę i podpowiadają, kiedy otworzyć pozycję.",
+        "bbox": [
+          120.0,
+          433.6,
+          1200.0,
+          24.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.208,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Zero prowizji od transakcji na złocie, srebrze i ropie.",
+        "bbox": [
+          120.0,
+          481.6,
+          1200.0,
+          24.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.232,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Otwórz konto",
+        "bbox": [
+          120.0,
+          545.6,
+          216.2,
+          55.0
+        ],
+        "font_px": 18.0,
+        "font_weight": 700,
+        "color": "#ffffff",
+        "background": "#0a7d32",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.262,
+        "tag_path": "html>body>main>section.cta>a.button"
+      },
+      {
+        "text": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznych odnotowuje straty.",
+        "bbox": [
+          120.0,
+          2020.6,
+          1200.0,
+          13.5
+        ],
+        "font_px": 9.0,
+        "font_weight": 400,
+        "color": "#c4c4c4",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": false,
+        "y_ratio": 0.971,
+        "tag_path": "html>body>footer>div.legal>p"
+      },
+      {
+        "text": "Pokaż ostrzeżenie o ryzyku",
+        "bbox": [
+          96.0,
+          2004.6,
+          1248.0,
+          75.0
+        ],
+        "font_px": 12.0,
+        "font_weight": 400,
+        "color": "#9a9a9a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": false,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": true,
+        "y_ratio": 0.964,
+        "tag_path": "html>body>footer>details>summary"
+      },
+      {
+        "text": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznych odnotowuje straty.",
+        "bbox": [
+          96.0,
+          2004.6,
+          1248.0,
+          75.0
+        ],
+        "font_px": 9.0,
+        "font_weight": 400,
+        "color": "#c4c4c4",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": false,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": true,
+        "y_ratio": 0.964,
+        "tag_path": "html>body>footer>details>div.legal>p"
+      },
+      {
+        "text": "PrimeFX24 jest nazwą handlową Kyrenia Prime Ltd, Limassol, Cypr. Fikcyjna firma na potrzeby testów InvestWatch.",
+        "bbox": [
+          120.0,
+          2042.1,
+          1200.0,
+          13.5
+        ],
+        "font_px": 9.0,
+        "font_weight": 400,
+        "color": "#c4c4c4",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": false,
+        "y_ratio": 0.982,
+        "tag_path": "html>body>footer>p.company"
+      }
+    ],
+    "tablet": [
+      {
+        "text": "PrimeFX24",
+        "bbox": [
+          24.0,
+          19.0,
+          122.7,
+          24.0
+        ],
+        "font_px": 20.0,
+        "font_weight": 700,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.009,
+        "tag_path": "html>body>header>a.logo"
+      },
+      {
+        "text": "Handluj złotem bez prowizji.",
+        "bbox": [
+          24.0,
+          118.0,
+          772.0,
+          57.6
+        ],
+        "font_px": 48.0,
+        "font_weight": 800,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.055,
+        "tag_path": "html>body>main>section.hero>h1"
+      },
+      {
+        "text": "Zarabiaj do 25% miesięcznie dzięki naszym sygnałom AI.",
+        "bbox": [
+          24.0,
+          191.6,
+          772.0,
+          84.0
+        ],
+        "font_px": 28.0,
+        "font_weight": 600,
+        "color": "#0a7d32",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.09,
+        "tag_path": "html>body>main>section.hero>p.lead"
+      },
+      {
+        "text": "Dołącz do 120 000 inwestorów, którzy już zarabiają.",
+        "bbox": [
+          24.0,
+          331.6,
+          772.0,
+          24.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.155,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Otwórz konto w 3 minuty.",
+        "bbox": [
+          24.0,
+          379.6,
+          772.0,
+          24.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.178,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Bonus powitalny 100% od pierwszej wpłaty.",
+        "bbox": [
+          24.0,
+          427.6,
+          772.0,
+          24.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.2,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Sygnały AI analizują rynek złota 24 godziny na dobę i podpowiadają, kiedy otworzyć pozycję.",
+        "bbox": [
+          24.0,
+          475.6,
+          772.0,
+          24.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.223,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Zero prowizji od transakcji na złocie, srebrze i ropie.",
+        "bbox": [
+          24.0,
+          523.6,
+          772.0,
+          24.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.245,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Otwórz konto",
+        "bbox": [
+          24.0,
+          587.6,
+          216.2,
+          55.0
+        ],
+        "font_px": 18.0,
+        "font_weight": 700,
+        "color": "#ffffff",
+        "background": "#0a7d32",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.275,
+        "tag_path": "html>body>main>section.cta>a.button"
+      },
+      {
+        "text": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznych odnotowuje straty.",
+        "bbox": [
+          24.0,
+          2062.6,
+          772.0,
+          27.0
+        ],
+        "font_px": 9.0,
+        "font_weight": 400,
+        "color": "#c4c4c4",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": false,
+        "y_ratio": 0.966,
+        "tag_path": "html>body>footer>div.legal>p"
+      },
+      {
+        "text": "Pokaż ostrzeżenie o ryzyku",
+        "bbox": [
+          0.0,
+          2046.6,
+          820.0,
+          88.5
+        ],
+        "font_px": 12.0,
+        "font_weight": 400,
+        "color": "#9a9a9a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": false,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": true,
+        "y_ratio": 0.959,
+        "tag_path": "html>body>footer>details>summary"
+      },
+      {
+        "text": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznych odnotowuje straty.",
+        "bbox": [
+          0.0,
+          2046.6,
+          820.0,
+          88.5
+        ],
+        "font_px": 9.0,
+        "font_weight": 400,
+        "color": "#c4c4c4",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": false,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": true,
+        "y_ratio": 0.959,
+        "tag_path": "html>body>footer>details>div.legal>p"
+      },
+      {
+        "text": "PrimeFX24 jest nazwą handlową Kyrenia Prime Ltd, Limassol, Cypr. Fikcyjna firma na potrzeby testów InvestWatch.",
+        "bbox": [
+          24.0,
+          2097.6,
+          772.0,
+          13.5
+        ],
+        "font_px": 9.0,
+        "font_weight": 400,
+        "color": "#c4c4c4",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": false,
+        "y_ratio": 0.982,
+        "tag_path": "html>body>footer>p.company"
+      }
+    ],
+    "phone": [
+      {
+        "text": "PrimeFX24",
+        "bbox": [
+          24.0,
+          19.0,
+          122.7,
+          24.0
+        ],
+        "font_px": 20.0,
+        "font_weight": 700,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.005,
+        "tag_path": "html>body>header>a.logo"
+      },
+      {
+        "text": "Handluj złotem bez prowizji.",
+        "bbox": [
+          24.0,
+          118.0,
+          342.0,
+          81.6
+        ],
+        "font_px": 34.0,
+        "font_weight": 800,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.033,
+        "tag_path": "html>body>main>section.hero>h1"
+      },
+      {
+        "text": "Zarabiaj do 25% miesięcznie dzięki naszym sygnałom AI.",
+        "bbox": [
+          24.0,
+          215.6,
+          342.0,
+          99.0
+        ],
+        "font_px": 22.0,
+        "font_weight": 600,
+        "color": "#0a7d32",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.06,
+        "tag_path": "html>body>main>section.hero>p.lead"
+      },
+      {
+        "text": "Dołącz do 120 000 inwestorów, którzy już zarabiają.",
+        "bbox": [
+          24.0,
+          370.6,
+          342.0,
+          48.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.103,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Otwórz konto w 3 minuty.",
+        "bbox": [
+          24.0,
+          442.6,
+          342.0,
+          24.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.123,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Bonus powitalny 100% od pierwszej wpłaty.",
+        "bbox": [
+          24.0,
+          490.6,
+          342.0,
+          48.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.137,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Sygnały AI analizują rynek złota 24 godziny na dobę i podpowiadają, kiedy otworzyć pozycję.",
+        "bbox": [
+          24.0,
+          562.6,
+          342.0,
+          72.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.157,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Zero prowizji od transakcji na złocie, srebrze i ropie.",
+        "bbox": [
+          24.0,
+          658.6,
+          342.0,
+          48.0
+        ],
+        "font_px": 16.0,
+        "font_weight": 400,
+        "color": "#1a1a1a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.183,
+        "tag_path": "html>body>main>p"
+      },
+      {
+        "text": "Otwórz konto",
+        "bbox": [
+          24.0,
+          746.6,
+          216.2,
+          55.0
+        ],
+        "font_px": 18.0,
+        "font_weight": 700,
+        "color": "#ffffff",
+        "background": "#0a7d32",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": false,
+        "in_collapsed": false,
+        "y_ratio": 0.208,
+        "tag_path": "html>body>main>section.cta>a.button"
+      },
+      {
+        "text": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznych odnotowuje straty.",
+        "bbox": [
+          0.0,
+          3505.6,
+          390.0,
+          85.0
+        ],
+        "font_px": 9.0,
+        "font_weight": 400,
+        "color": "#c4c4c4",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": false,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": true,
+        "y_ratio": 0.976,
+        "tag_path": "html>body>footer>div.legal>p"
+      },
+      {
+        "text": "Pokaż ostrzeżenie o ryzyku",
+        "bbox": [
+          24.0,
+          3521.6,
+          342.0,
+          18.0
+        ],
+        "font_px": 12.0,
+        "font_weight": 400,
+        "color": "#9a9a9a",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": false,
+        "y_ratio": 0.981,
+        "tag_path": "html>body>footer>details>summary"
+      },
+      {
+        "text": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznych odnotowuje straty.",
+        "bbox": [
+          24.0,
+          3521.6,
+          342.0,
+          18.0
+        ],
+        "font_px": 9.0,
+        "font_weight": 400,
+        "color": "#c4c4c4",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": false,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": true,
+        "y_ratio": 0.981,
+        "tag_path": "html>body>footer>details>div.legal>p"
+      },
+      {
+        "text": "PrimeFX24 jest nazwą handlową Kyrenia Prime Ltd, Limassol, Cypr. Fikcyjna firma na potrzeby testów InvestWatch.",
+        "bbox": [
+          24.0,
+          3539.6,
+          342.0,
+          27.0
+        ],
+        "font_px": 9.0,
+        "font_weight": 400,
+        "color": "#c4c4c4",
+        "background": "#ffffff",
+        "opacity": 1.0,
+        "visible": true,
+        "occluded": false,
+        "clipped": false,
+        "in_footer": true,
+        "in_collapsed": false,
+        "y_ratio": 0.986,
+        "tag_path": "html>body>footer>p.company"
+      }
+    ]
+  },
+  "page_height": {
+    "desktop": 2080.0,
+    "tablet": 2135.0,
+    "phone": 3591.0
+  }
+}

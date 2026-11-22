@@ -1,0 +1,32 @@
+{
+  "_comment": "Curated additions to KNF register entries (the register lists no websites for Polish firms). Keyed by the register name. Only well-known public brand domains; no social handles are asserted here.",
+  "brands": [
+    {"name": "XTB S.A.", "aliases": ["XTB", "X-Trade Brokers"], "domains": ["xtb.com"]},
+    {"name": "mBANK S.A.", "aliases": ["mBank", "eMakler"], "domains": ["mbank.pl"]},
+    {"name": "POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A. (PKO BP S.A.)", "aliases": ["PKO BP", "PKO Bank Polski", "BM PKO BP"], "domains": ["pkobp.pl"]},
+    {"name": "BANK PEKAO S.A. (BANK POLSKA KASA OPIEKI S.A.)", "aliases": ["Bank Pekao", "Pekao"], "domains": ["pekao.com.pl"]},
+    {"name": "ING BANK ŚLĄSKI S.A.", "aliases": ["ING Bank Śląski"], "domains": ["ing.pl"]},
+    {"name": "BANK MILLENNIUM S.A.", "aliases": ["Bank Millennium"], "domains": ["bankmillennium.pl"]},
+    {"name": "ALIOR BANK S.A.", "aliases": ["Alior Bank"], "domains": ["aliorbank.pl"]},
+    {"name": "BANK HANDLOWY S.A.", "aliases": ["Citi Handlowy", "Bank Handlowy"], "domains": ["citibank.pl", "citihandlowy.pl"]},
+    {"name": "BNP Paribas Bank Polska S.A.", "aliases": ["BNP Paribas"], "domains": ["bnpparibas.pl"]},
+    {"name": "VeloBank S.A.", "aliases": ["VeloBank"], "domains": ["velobank.pl"]},
+    {"name": "DOM MAKLERSKI BANKU OCHRONY ŚRODOWISKA S.A.", "aliases": ["DM BOŚ", "Bossa"], "domains": ["bossa.pl"]},
+    {"name": "DOM MAKLERSKI BDM S.A.", "aliases": ["DM BDM"], "domains": ["bdm.pl"]},
+    {"name": "NOBLE Securities S.A.", "aliases": ["Noble Securities"], "domains": ["noblesecurities.pl"]},
+    {"name": "TRIGON DOM MAKLERSKI S.A.", "aliases": ["Trigon"], "domains": ["trigon.pl"]},
+    {"name": "IPOPEMA SECURITIES S.A.", "aliases": ["Ipopema"], "domains": ["ipopema.pl", "ipopemasecurities.pl"]},
+    {"name": "OANDA TMS BROKERS S.A.", "aliases": ["OANDA TMS", "TMS Brokers"], "domains": ["tms.pl"]},
+    {"name": "Plus500CY Ltd", "aliases": ["Plus500"], "domains": ["plus500.com"]},
+    {"name": "Etoro (Europe) Ltd", "aliases": ["eToro"], "domains": ["etoro.com"]},
+    {"name": "Admirals Europe Ltd", "aliases": ["Admirals", "Admiral Markets"], "domains": ["admirals.com"]},
+    {"name": "Revolut Securities Europe UAB", "aliases": ["Revolut"], "domains": ["revolut.com"]},
+    {"name": "Freedom Finance Europe Ltd", "aliases": ["Freedom24"], "domains": ["freedom24.com"]},
+    {"name": "Capital Com SV Investments Ltd", "aliases": ["Capital.com"], "domains": ["capital.com"]},
+    {"name": "CMC Markets Germany GmbH", "aliases": ["CMC Markets"], "domains": ["cmcmarkets.com"]},
+    {"name": "Interactive Brokers Ireland Ltd", "aliases": ["Interactive Brokers"], "domains": ["interactivebrokers.com"]},
+    {"name": "Finax o.c.p., a.s.", "aliases": ["Finax"], "domains": ["finax.eu"]},
+    {"name": "Finax, o.c.p., a.s.", "aliases": ["Finax"], "domains": ["finax.eu"]},
+    {"name": "MICHAEL/STRÖM DOM MAKLERSKI S.A.", "aliases": [], "domains": ["michaelstrom.pl"]}
+  ]
+}

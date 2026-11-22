@@ -1,0 +1,8 @@
+dist
+node_modules
+package-lock.json
+# Verbatim copies of data/fixtures (npm run sync:fixtures)
+src/mocks/fixtures
+# Playwright output
+test-results
+playwright-report

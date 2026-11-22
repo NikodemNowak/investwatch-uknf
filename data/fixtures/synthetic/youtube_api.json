@@ -1,0 +1,31 @@
+{
+  "_comment": "SYNTHETIC videos.list resources in the shape of the YouTube Data API v3. Fictional channel and ids; no data obtained from YouTube.",
+  "synthetic": true,
+  "items": [
+    {
+      "synthetic": true,
+      "id": "SYNTHETIC01",
+      "snippet": {
+        "publishedAt": "2026-11-14T18:00:00Z",
+        "channelId": "UCSYNTHETICCHANNEL000001",
+        "channelTitle": "Inwestor z Mazur (fikcyjny)",
+        "title": "Jak zacząć inwestować? Mój ranking kont maklerskich 2026",
+        "description": "Odcinek powstał we współpracy z Aurora Kapitał. Załóż konto z moim linkiem: https://aurorakapital.example/start?ref=MAZURY i odbierz 200 zł. Kod: MAZURY200",
+        "tags": ["inwestowanie", "konto maklerskie", "kod promocyjny"],
+        "defaultAudioLanguage": "pl"
+      }
+    },
+    {
+      "synthetic": true,
+      "id": "SYNTHETIC02",
+      "snippet": {
+        "publishedAt": "2026-11-19T09:30:00Z",
+        "channelId": "UCSYNTHETICCHANNEL000002",
+        "channelTitle": "Trader Tomek (fikcyjny)",
+        "title": "Sygnały na złoto, które dały mi 40% w miesiąc",
+        "description": "Kupuj tam gdzie ja: https://primefx24.example/promo-zloto . Gwarantuję, że to działa.",
+        "defaultAudioLanguage": "pl"
+      }
+    }
+  ]
+}

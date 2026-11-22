@@ -1,0 +1,32 @@
+{
+  "_comment": "SYNTHETIC records in the shape of the TikTok Commercial Content API (ad query + ad detail merged). Fictional advertisers; no data obtained from TikTok.",
+  "synthetic": true,
+  "data": {
+    "ads": [
+      {
+        "synthetic": true,
+        "ad": {
+          "id": 9000000000000001,
+          "first_shown_date": "20261112",
+          "last_shown_date": "20261120",
+          "status": "active",
+          "title": "Handluj złotem bez prowizji! Kod ZLOTO24 = bonus 300 zł #inwestowanie",
+          "external_url": "https://primefx24.example/promo-zloto",
+          "reach": {"unique_users_seen": "10K-100K"}
+        },
+        "advertiser": {"business_id": 9000000001, "business_name": "PrimeFX24 (fikcyjny)", "paid_for_by": "Kyrenia Prime Ltd"}
+      },
+      {
+        "synthetic": true,
+        "ad": {
+          "id": 9000000000000002,
+          "first_shown_date": "20261105",
+          "status": "active",
+          "title": "Aurora Inwestor: rachunek maklerski. Inwestowanie wiąże się z ryzykiem utraty części lub całości kapitału.",
+          "external_url": "https://aurorakapital.example/rachunek"
+        },
+        "advertiser": {"business_id": 9000000002, "business_name": "Aurora Kapitał (fikcyjna)", "paid_for_by": "Aurora Kapitał Dom Maklerski S.A."}
+      }
+    ]
+  }
+}

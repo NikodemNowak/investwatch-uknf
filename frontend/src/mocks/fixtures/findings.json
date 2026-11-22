@@ -1,0 +1,2474 @@
+[
+  {
+    "id": "f0000000-0000-4000-8000-000000000001",
+    "post_id": "a0000000-0000-4000-8000-000000000001",
+    "module": "m1_third_party_ad",
+    "score": 0.94,
+    "risk_level": "high",
+    "explanation": "Finfluencerka @InwestujZKasia promuje PrimeFX24 (Kyrenia Prime Ltd) linkiem afiliacyjnym i kodem KASIA50. Reklama nieoznaczona, brak ostrzeżenia o ryzyku, obiecywany zysk 100%.",
+    "quotes": [
+      "z mojego linku dostajecie bonus 500 zł na start",
+      "(kod: KASIA50)"
+    ],
+    "firm": {
+      "id": "c0000000-0000-4000-8000-000000000007",
+      "name": "Kyrenia Prime Ltd",
+      "aliases": [
+        "PrimeFX24",
+        "Kyrenia Prime"
+      ],
+      "domains": [
+        "primefx24.example"
+      ],
+      "handles": [
+        "@primefx24"
+      ],
+      "kind": "zagraniczna_bez_oddzialu",
+      "country": "CY",
+      "services": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_zagraniczne_firmy_inwestycyjne"
+    },
+    "firm_match": {
+      "firm": {
+        "id": "c0000000-0000-4000-8000-000000000007",
+        "name": "Kyrenia Prime Ltd",
+        "aliases": [
+          "PrimeFX24",
+          "Kyrenia Prime"
+        ],
+        "domains": [
+          "primefx24.example"
+        ],
+        "handles": [
+          "@primefx24"
+        ],
+        "kind": "zagraniczna_bez_oddzialu",
+        "country": "CY",
+        "services": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_zagraniczne_firmy_inwestycyjne"
+      },
+      "confidence": 1.0,
+      "method": "domain",
+      "matched_text": "primefx24.example",
+      "on": "content"
+    },
+    "advertiser": "@InwestujZKasia",
+    "rules": [
+      {
+        "rule_id": "2",
+        "name": "Oznaczenie reklamy",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Brak oznaczenia reklamy (#reklama, „współpraca”) mimo linku afiliacyjnego i kodu promocyjnego.",
+        "legal_basis": "art. 24 ust. 3 MiFID II",
+        "evidence": [
+          {
+            "quote": "https://primefx24.example/pl/register?aff=KASIA50",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "3",
+        "name": "Informacja o ryzyku",
+        "status": "fail",
+        "confidence": 0.85,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Twierdzenie o zysku 340% bez żadnej informacji o ryzyku.",
+        "legal_basis": "art. 44 ust. 2 lit. b rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Jak zarobiłam 340% w rok na złocie i Nasdaqu?",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "14",
+        "name": "Ostrzeżenie przy wynikach historycznych",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 lit. d rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "15",
+        "name": "Prognozy przyszłych wyników",
+        "status": "fail",
+        "confidence": 0.8,
+        "check_type": "llm",
+        "weight": 0.7,
+        "explanation": "Prognoza „minimum 100%” w tym roku bez zastrzeżenia, że nie jest wiarygodnym wskaźnikiem.",
+        "legal_basis": "art. 44 ust. 6 rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "w tym roku spokojnie zrobicie minimum 100%",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "17",
+        "name": "Zakaz sugerowania aprobaty organu nadzoru",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "18",
+        "name": "Nadzór jako argument bezpieczeństwa",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      }
+    ],
+    "model": "bielik-11b-v3.1+rules-v1",
+    "used_llm": true,
+    "duplicates": 3,
+    "status": "confirmed",
+    "created_at": "2026-11-14T18:06:12Z"
+  },
+  {
+    "id": "f0000000-0000-4000-8000-000000000002",
+    "post_id": "a0000000-0000-4000-8000-000000000002",
+    "module": "m1_third_party_ad",
+    "score": 0.91,
+    "risk_level": "high",
+    "explanation": "Płatna współpraca twórcy „Giełda bez tajemnic” z DM Złoty Róg (link z parametrem ref). Reklama oznaczona i z ostrzeżeniem o ryzyku — do rejestru reklam podmiotów trzecich.",
+    "quotes": [
+      "Załóż konto z mojego linku",
+      "ref=marcin"
+    ],
+    "firm": {
+      "id": "c0000000-0000-4000-8000-000000000001",
+      "name": "Dom Maklerski Złoty Róg S.A.",
+      "aliases": [
+        "Złoty Róg",
+        "ZłotyRóg Trader"
+      ],
+      "domains": [
+        "zlotyrog.example"
+      ],
+      "handles": [
+        "@zlotyrog_dm"
+      ],
+      "kind": "dom_maklerski",
+      "country": "PL",
+      "services": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/domy_maklerskie"
+    },
+    "firm_match": {
+      "firm": {
+        "id": "c0000000-0000-4000-8000-000000000001",
+        "name": "Dom Maklerski Złoty Róg S.A.",
+        "aliases": [
+          "Złoty Róg",
+          "ZłotyRóg Trader"
+        ],
+        "domains": [
+          "zlotyrog.example"
+        ],
+        "handles": [
+          "@zlotyrog_dm"
+        ],
+        "kind": "dom_maklerski",
+        "country": "PL",
+        "services": [
+          "A1",
+          "A2",
+          "A3",
+          "A4"
+        ],
+        "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/domy_maklerskie"
+      },
+      "confidence": 0.9,
+      "method": "alias",
+      "matched_text": "Dom Maklerski Złoty Róg S.A.",
+      "on": "content"
+    },
+    "advertiser": "Marcin | Giełda bez tajemnic",
+    "rules": [
+      {
+        "rule_id": "2",
+        "name": "Oznaczenie reklamy",
+        "status": "pass",
+        "confidence": 0.95,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Materiał oznaczony jako reklama (#reklama #współpraca).",
+        "legal_basis": "art. 24 ust. 3 MiFID II",
+        "evidence": [
+          {
+            "quote": "#reklama #współpraca",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "3",
+        "name": "Informacja o ryzyku",
+        "status": "pass",
+        "confidence": 0.9,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Standardowe ostrzeżenie CFD z odsetkiem rachunków ze stratą.",
+        "legal_basis": "art. 44 ust. 2 lit. b rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "74% rachunków inwestorów detalicznych odnotowuje straty",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "14",
+        "name": "Ostrzeżenie przy wynikach historycznych",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 lit. d rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "15",
+        "name": "Prognozy przyszłych wyników",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 6 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "17",
+        "name": "Zakaz sugerowania aprobaty organu nadzoru",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "18",
+        "name": "Nadzór jako argument bezpieczeństwa",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      }
+    ],
+    "model": "rules-v1",
+    "used_llm": false,
+    "duplicates": 0,
+    "status": "in_review",
+    "created_at": "2026-11-18T12:01:40Z"
+  },
+  {
+    "id": "f0000000-0000-4000-8000-000000000003",
+    "post_id": "a0000000-0000-4000-8000-000000000008",
+    "module": "m1_third_party_ad",
+    "score": 0.55,
+    "risk_level": "medium",
+    "explanation": "Kanał z sygnałami odsyła do PrimeFX24 linkiem afiliacyjnym (aff=TOMEK). Głównym przedmiotem materiału jest płatna grupa sygnałów, stąd średnia pewność.",
+    "quotes": [
+      "Ja gram na koncie w PrimeFX24, link w opisie"
+    ],
+    "firm": {
+      "id": "c0000000-0000-4000-8000-000000000007",
+      "name": "Kyrenia Prime Ltd",
+      "aliases": [
+        "PrimeFX24",
+        "Kyrenia Prime"
+      ],
+      "domains": [
+        "primefx24.example"
+      ],
+      "handles": [
+        "@primefx24"
+      ],
+      "kind": "zagraniczna_bez_oddzialu",
+      "country": "CY",
+      "services": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_zagraniczne_firmy_inwestycyjne"
+    },
+    "firm_match": {
+      "firm": {
+        "id": "c0000000-0000-4000-8000-000000000007",
+        "name": "Kyrenia Prime Ltd",
+        "aliases": [
+          "PrimeFX24",
+          "Kyrenia Prime"
+        ],
+        "domains": [
+          "primefx24.example"
+        ],
+        "handles": [
+          "@primefx24"
+        ],
+        "kind": "zagraniczna_bez_oddzialu",
+        "country": "CY",
+        "services": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_zagraniczne_firmy_inwestycyjne"
+      },
+      "confidence": 1.0,
+      "method": "domain",
+      "matched_text": "primefx24.example",
+      "on": "content"
+    },
+    "advertiser": "@TomaszTraderSygnaly",
+    "rules": [
+      {
+        "rule_id": "2",
+        "name": "Oznaczenie reklamy",
+        "status": "fail",
+        "confidence": 0.7,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Link afiliacyjny bez oznaczenia współpracy.",
+        "legal_basis": "art. 24 ust. 3 MiFID II",
+        "evidence": [
+          {
+            "quote": "https://primefx24.example/pl/register?aff=TOMEK",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "3",
+        "name": "Informacja o ryzyku",
+        "status": "unknown",
+        "confidence": 0.0,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Nie udało się ocenić proporcjonalności: model nie zwrócił cytatu obecnego w tekście.",
+        "legal_basis": "art. 44 ust. 2 lit. b rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "14",
+        "name": "Ostrzeżenie przy wynikach historycznych",
+        "status": "fail",
+        "confidence": 0.6,
+        "check_type": "text",
+        "weight": 0.7,
+        "explanation": "Wyniki sygnałów („17 trafionych z 20”) bez zastrzeżenia o wynikach historycznych.",
+        "legal_basis": "art. 44 ust. 4 lit. d rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "W listopadzie 17 trafionych sygnałów z 20!",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "15",
+        "name": "Prognozy przyszłych wyników",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 6 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "17",
+        "name": "Zakaz sugerowania aprobaty organu nadzoru",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "18",
+        "name": "Nadzór jako argument bezpieczeństwa",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      }
+    ],
+    "model": "bielik-11b-v3.1+rules-v1",
+    "used_llm": true,
+    "duplicates": 0,
+    "status": "new",
+    "created_at": "2026-11-20T20:11:05Z"
+  },
+  {
+    "id": "f0000000-0000-4000-8000-000000000004",
+    "post_id": "a0000000-0000-4000-8000-000000000007",
+    "module": "m1_third_party_ad",
+    "score": 0.22,
+    "risk_level": "low",
+    "explanation": "Wzmianka o DM Wisła Capital jako miejscu prowadzenia rachunków, bez linku i znaczników promocji. Raczej nie reklama.",
+    "quotes": [
+      "Klienci utrzymują rachunki w Dom Maklerski Wisła Capital S.A."
+    ],
+    "firm": {
+      "id": "c0000000-0000-4000-8000-000000000002",
+      "name": "Dom Maklerski Wisła Capital S.A.",
+      "aliases": [
+        "Wisła Capital",
+        "DM Wisła"
+      ],
+      "domains": [
+        "wislacapital.example"
+      ],
+      "handles": [
+        "@wislacapital"
+      ],
+      "kind": "dom_maklerski",
+      "country": "PL",
+      "services": [
+        "A1",
+        "A2",
+        "A4",
+        "A5",
+        "A7"
+      ],
+      "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/domy_maklerskie"
+    },
+    "firm_match": {
+      "firm": {
+        "id": "c0000000-0000-4000-8000-000000000002",
+        "name": "Dom Maklerski Wisła Capital S.A.",
+        "aliases": [
+          "Wisła Capital",
+          "DM Wisła"
+        ],
+        "domains": [
+          "wislacapital.example"
+        ],
+        "handles": [
+          "@wislacapital"
+        ],
+        "kind": "dom_maklerski",
+        "country": "PL",
+        "services": [
+          "A1",
+          "A2",
+          "A4",
+          "A5",
+          "A7"
+        ],
+        "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/domy_maklerskie"
+      },
+      "confidence": 0.9,
+      "method": "alias",
+      "matched_text": "Dom Maklerski Wisła Capital S.A.",
+      "on": "content"
+    },
+    "advertiser": "Kowalski Family Office",
+    "rules": [
+      {
+        "rule_id": "2",
+        "name": "Oznaczenie reklamy",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Brak znaczników promocji – reguła nie ma zastosowania.",
+        "legal_basis": "art. 24 ust. 3 MiFID II",
+        "evidence": []
+      },
+      {
+        "rule_id": "3",
+        "name": "Informacja o ryzyku",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 2 lit. b rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "14",
+        "name": "Ostrzeżenie przy wynikach historycznych",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 lit. d rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "15",
+        "name": "Prognozy przyszłych wyników",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 6 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "17",
+        "name": "Zakaz sugerowania aprobaty organu nadzoru",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "18",
+        "name": "Nadzór jako argument bezpieczeństwa",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      }
+    ],
+    "model": "rules-v1",
+    "used_llm": false,
+    "duplicates": 0,
+    "status": "dismissed",
+    "created_at": "2026-11-19T15:41:30Z"
+  },
+  {
+    "id": "f0000000-0000-4000-8000-000000000005",
+    "post_id": "a0000000-0000-4000-8000-000000000003",
+    "module": "m2_risk_disclosure",
+    "score": 0.999,
+    "risk_level": "high",
+    "explanation": "Strona PrimeFX24 eksponuje zysk „do 25% miesięcznie”, a ostrzeżenie o ryzyku ma 9 px, niski kontrast, jest w stopce i zwinięte na telefonie.",
+    "quotes": [
+      "Zarabiaj do 25% miesięcznie dzięki naszym sygnałom AI.",
+      "Bonus powitalny 100% od pierwszej wpłaty."
+    ],
+    "firm": {
+      "id": "c0000000-0000-4000-8000-000000000007",
+      "name": "Kyrenia Prime Ltd",
+      "aliases": [
+        "PrimeFX24",
+        "Kyrenia Prime"
+      ],
+      "domains": [
+        "primefx24.example"
+      ],
+      "handles": [
+        "@primefx24"
+      ],
+      "kind": "zagraniczna_bez_oddzialu",
+      "country": "CY",
+      "services": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_zagraniczne_firmy_inwestycyjne"
+    },
+    "firm_match": {
+      "firm": {
+        "id": "c0000000-0000-4000-8000-000000000007",
+        "name": "Kyrenia Prime Ltd",
+        "aliases": [
+          "PrimeFX24",
+          "Kyrenia Prime"
+        ],
+        "domains": [
+          "primefx24.example"
+        ],
+        "handles": [
+          "@primefx24"
+        ],
+        "kind": "zagraniczna_bez_oddzialu",
+        "country": "CY",
+        "services": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_zagraniczne_firmy_inwestycyjne"
+      },
+      "confidence": 1.0,
+      "method": "domain",
+      "matched_text": "primefx24.example",
+      "on": "author"
+    },
+    "advertiser": null,
+    "rules": [
+      {
+        "rule_id": "1",
+        "name": "Identyfikacja firmy",
+        "status": "pass",
+        "confidence": 0.9,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Pełna nazwa podmiotu (Kyrenia Prime Ltd) jest w stopce.",
+        "legal_basis": "art. 44 ust. 2 lit. a rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "PrimeFX24 jest nazwą handlową Kyrenia Prime Ltd",
+            "viewport": "desktop",
+            "bbox": [
+              24,
+              2352,
+              520,
+              12
+            ],
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "2",
+        "name": "Oznaczenie reklamy",
+        "status": "fail",
+        "confidence": 0.6,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Strona promocyjna bez oznaczenia jako materiał marketingowy.",
+        "legal_basis": "art. 24 ust. 3 MiFID II",
+        "evidence": []
+      },
+      {
+        "rule_id": "3",
+        "name": "Informacja o ryzyku",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Twierdzenie o zysku do 25% miesięcznie bez ostrzeżenia w tym samym bloku; ostrzeżenie dopiero w stopce.",
+        "legal_basis": "art. 44 ust. 2 lit. b rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Zarabiaj do 25% miesięcznie dzięki naszym sygnałom AI.",
+            "viewport": "desktop",
+            "bbox": [
+              120,
+              210,
+              900,
+              36
+            ],
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "4",
+        "name": "Rozmiar czcionki ryzyka",
+        "status": "fail",
+        "confidence": 0.95,
+        "check_type": "render",
+        "weight": 0.6,
+        "explanation": "Czcionka ostrzeżenia 9 px przy dominującej 16 px (stosunek 0,56, wymagane co najmniej 0,95).",
+        "legal_basis": "art. 44 ust. 2 lit. c rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznyc…",
+            "viewport": "desktop",
+            "bbox": [
+              120.0,
+              2020.6,
+              1200.0,
+              13.5
+            ],
+            "measurements": {
+              "risk_font_px": 9.0,
+              "dominant_font_px": 16.0,
+              "ratio": 0.562
+            }
+          }
+        ]
+      },
+      {
+        "rule_id": "5",
+        "name": "Ekspozycja i kontrast ryzyka",
+        "status": "fail",
+        "confidence": 0.85,
+        "check_type": "render",
+        "weight": 0.6,
+        "explanation": "Ostrzeżenie o ryzyku jest słabo eksponowane: kontrast 1,7:1 (#c4c4c4 na #ffffff) poniżej progu 4,5:1.",
+        "legal_basis": "art. 44 ust. 2 lit. c i e rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznyc…",
+            "viewport": "desktop",
+            "bbox": [
+              120.0,
+              2020.6,
+              1200.0,
+              13.5
+            ],
+            "measurements": {
+              "contrast": 1.74,
+              "color": "#c4c4c4",
+              "background": "#ffffff",
+              "opacity": 1.0,
+              "occluded": "false"
+            }
+          }
+        ]
+      },
+      {
+        "rule_id": "6",
+        "name": "Zakrywanie / ukrywanie ryzyka",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "render",
+        "weight": 0.7,
+        "explanation": "Ostrzeżenie jest tylko w stopce / przypisach (na 97% wysokości strony), a obietnica zysku „Handluj złotem bez prowizji.” jest na pierwszym ekranie.",
+        "legal_basis": "art. 44 ust. 2 lit. e rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznyc…",
+            "viewport": "desktop",
+            "bbox": [
+              120.0,
+              2020.6,
+              1200.0,
+              13.5
+            ],
+            "measurements": {
+              "y_ratio": 0.971,
+              "in_footer": "true",
+              "tag_path": "html>body>footer>div.legal>p"
+            }
+          },
+          {
+            "quote": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznyc…",
+            "viewport": "desktop",
+            "bbox": [
+              96.0,
+              2004.6,
+              1248.0,
+              75.0
+            ],
+            "measurements": {
+              "y_ratio": 0.964,
+              "in_footer": "true",
+              "tag_path": "html>body>footer>details>div.legal>p"
+            }
+          },
+          {
+            "quote": "Handluj złotem bez prowizji.",
+            "viewport": "desktop",
+            "bbox": [
+              120.0,
+              118.0,
+              1200.0,
+              57.6
+            ],
+            "measurements": {
+              "y_ratio": 0.057,
+              "role": "gains_claim"
+            }
+          }
+        ]
+      },
+      {
+        "rule_id": "7",
+        "name": "Dostępność za 1 kliknięciem",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "render",
+        "weight": 0.7,
+        "explanation": "Ostrzeżenie jest w kodzie strony, ale ukryte (zwinięte) pod elementem „Pokaż ostrzeżenie o ryzyku” (widok: telefon): czytelnik musi kliknąć, żeby je zobaczyć.",
+        "legal_basis": "art. 44 ust. 2 lit. b i e rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznyc…",
+            "viewport": "phone",
+            "bbox": [
+              24.0,
+              3521.6,
+              342.0,
+              18.0
+            ],
+            "measurements": {
+              "in_collapsed": "true",
+              "visible": "false"
+            }
+          },
+          {
+            "quote": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznyc…",
+            "viewport": "phone",
+            "bbox": [
+              0.0,
+              3505.6,
+              390.0,
+              85.0
+            ],
+            "measurements": {
+              "in_collapsed": "true",
+              "visible": "false"
+            }
+          },
+          {
+            "quote": "Pokaż ostrzeżenie o ryzyku",
+            "viewport": "phone",
+            "bbox": [
+              24.0,
+              3521.6,
+              342.0,
+              18.0
+            ],
+            "measurements": {
+              "role": "trigger"
+            }
+          }
+        ]
+      },
+      {
+        "rule_id": "8",
+        "name": "Responsywność (różne urządzenia)",
+        "status": "fail",
+        "confidence": 0.85,
+        "check_type": "render",
+        "weight": 0.5,
+        "explanation": "Ostrzeżenie nie jest czytelne na wszystkich urządzeniach (komputer: czcionka 9 px (minimum 12 px); tablet: czcionka 9 px (minimum 12 px); telefon: niewidoczne bez rozwijania, czcionka 9 px (minimum 12 px)).",
+        "legal_basis": "art. 44 ust. 2 lit. g rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznyc…",
+            "viewport": "desktop",
+            "bbox": [
+              120.0,
+              2020.6,
+              1200.0,
+              13.5
+            ],
+            "measurements": {
+              "risk_font_px": 9.0,
+              "ratio": 0.562,
+              "visible": "true",
+              "clipped": "false"
+            }
+          },
+          {
+            "quote": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznyc…",
+            "viewport": "tablet",
+            "bbox": [
+              24.0,
+              2062.6,
+              772.0,
+              27.0
+            ],
+            "measurements": {
+              "risk_font_px": 9.0,
+              "ratio": 0.562,
+              "visible": "true",
+              "clipped": "false"
+            }
+          },
+          {
+            "quote": "Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznyc…",
+            "viewport": "phone",
+            "bbox": [
+              24.0,
+              3521.6,
+              342.0,
+              18.0
+            ],
+            "measurements": {
+              "risk_font_px": 9.0,
+              "ratio": 0.562,
+              "visible": "false",
+              "clipped": "false"
+            }
+          }
+        ]
+      },
+      {
+        "rule_id": "9",
+        "name": "Zrozumiałość dla grupy docelowej",
+        "status": "pass",
+        "confidence": 0.6,
+        "check_type": "llm",
+        "weight": 0.3,
+        "explanation": "Standardowe ostrzeżenie CFD, zrozumiałe dla klienta detalicznego.",
+        "legal_basis": "art. 44 ust. 2 lit. d rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "10",
+        "name": "Spójność językowa",
+        "status": "pass",
+        "confidence": 0.95,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Ostrzeżenie w tym samym języku (polski) co przekaz główny.",
+        "legal_basis": "art. 44 ust. 2 lit. f rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "11",
+        "name": "Porównania produktów / usług",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 3 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "12a",
+        "name": "Wyniki historyczne: okres i zakres",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "12b",
+        "name": "Wyniki historyczne: warunki i waluta",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "13",
+        "name": "Dominacja wyników historycznych",
+        "status": "na",
+        "confidence": 0.6,
+        "check_type": "render",
+        "weight": 0.5,
+        "explanation": "Nie dotyczy: brak wyników historycznych.",
+        "legal_basis": "art. 44 ust. 4 lit. a rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "14",
+        "name": "Ostrzeżenie przy wynikach historycznych",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 lit. d rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "15",
+        "name": "Prognozy przyszłych wyników",
+        "status": "fail",
+        "confidence": 0.8,
+        "check_type": "llm",
+        "weight": 0.7,
+        "explanation": "„Do 25% miesięcznie” to prognoza zysku bez zastrzeżenia o jej wiarygodności.",
+        "legal_basis": "art. 44 ust. 6 rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Zarabiaj do 25% miesięcznie",
+            "viewport": "desktop",
+            "bbox": [
+              120,
+              210,
+              900,
+              36
+            ],
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "16",
+        "name": "Informacja podatkowa",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 7 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "17",
+        "name": "Zakaz sugerowania aprobaty organu nadzoru",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "18",
+        "name": "Nadzór jako argument bezpieczeństwa",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      }
+    ],
+    "model": "bielik-11b-v3.1+rules-v1",
+    "used_llm": true,
+    "duplicates": 1,
+    "status": "new",
+    "created_at": "2026-11-21T07:10:44Z"
+  },
+  {
+    "id": "f0000000-0000-4000-8000-000000000006",
+    "post_id": "a0000000-0000-4000-8000-000000000004",
+    "module": "m2_risk_disclosure",
+    "score": 0.998,
+    "risk_level": "high",
+    "explanation": "Reklama portfela Wisła Dywidenda: wynik z 3 lat jako główny element, brak zastrzeżenia o wynikach historycznych, nadzór KNF przedstawiony jako gwarancja bezpieczeństwa.",
+    "quotes": [
+      "Portfel Wisła Dywidenda: +68% w 3 lata!",
+      "jest nadzorowany przez KNF – Twoje pieniądze są u nas bezpieczne"
+    ],
+    "firm": {
+      "id": "c0000000-0000-4000-8000-000000000002",
+      "name": "Dom Maklerski Wisła Capital S.A.",
+      "aliases": [
+        "Wisła Capital",
+        "DM Wisła"
+      ],
+      "domains": [
+        "wislacapital.example"
+      ],
+      "handles": [
+        "@wislacapital"
+      ],
+      "kind": "dom_maklerski",
+      "country": "PL",
+      "services": [
+        "A1",
+        "A2",
+        "A4",
+        "A5",
+        "A7"
+      ],
+      "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/domy_maklerskie"
+    },
+    "firm_match": {
+      "firm": {
+        "id": "c0000000-0000-4000-8000-000000000002",
+        "name": "Dom Maklerski Wisła Capital S.A.",
+        "aliases": [
+          "Wisła Capital",
+          "DM Wisła"
+        ],
+        "domains": [
+          "wislacapital.example"
+        ],
+        "handles": [
+          "@wislacapital"
+        ],
+        "kind": "dom_maklerski",
+        "country": "PL",
+        "services": [
+          "A1",
+          "A2",
+          "A4",
+          "A5",
+          "A7"
+        ],
+        "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/domy_maklerskie"
+      },
+      "confidence": 1.0,
+      "method": "domain",
+      "matched_text": "wislacapital.example",
+      "on": "author"
+    },
+    "advertiser": null,
+    "rules": [
+      {
+        "rule_id": "1",
+        "name": "Identyfikacja firmy",
+        "status": "pass",
+        "confidence": 0.95,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Pełna nazwa firmy z formą prawną w treści.",
+        "legal_basis": "art. 44 ust. 2 lit. a rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Dom Maklerski Wisła Capital S.A.",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "2",
+        "name": "Oznaczenie reklamy",
+        "status": "pass",
+        "confidence": 0.95,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Oznaczenie „Materiał marketingowy”.",
+        "legal_basis": "art. 24 ust. 3 MiFID II",
+        "evidence": [
+          {
+            "quote": "Materiał marketingowy.",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "3",
+        "name": "Informacja o ryzyku",
+        "status": "fail",
+        "confidence": 0.7,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Ostrzeżenie ogólnikowe i oddalone od eksponowanego wyniku +68%.",
+        "legal_basis": "art. 44 ust. 2 lit. b rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Inwestowanie wiąże się z ryzykiem.",
+            "viewport": "desktop",
+            "bbox": [
+              80,
+              1480,
+              600,
+              22
+            ],
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "4",
+        "name": "Rozmiar czcionki ryzyka",
+        "status": "pass",
+        "confidence": 0.9,
+        "check_type": "render",
+        "weight": 0.6,
+        "explanation": "Czcionka ostrzeżenia równa dominującej (16 px).",
+        "legal_basis": "art. 44 ust. 2 lit. c rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Inwestowanie wiąże się z ryzykiem.",
+            "viewport": "desktop",
+            "bbox": [
+              80,
+              1480,
+              600,
+              22
+            ],
+            "measurements": {
+              "risk_font_px": 16,
+              "dominant_font_px": 16,
+              "ratio": 1.0
+            }
+          }
+        ]
+      },
+      {
+        "rule_id": "5",
+        "name": "Ekspozycja i kontrast ryzyka",
+        "status": "pass",
+        "confidence": 0.85,
+        "check_type": "render",
+        "weight": 0.6,
+        "explanation": "Kontrast 12,6:1.",
+        "legal_basis": "art. 44 ust. 2 lit. c i e rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "6",
+        "name": "Zakrywanie / ukrywanie ryzyka",
+        "status": "pass",
+        "confidence": 0.8,
+        "check_type": "render",
+        "weight": 0.7,
+        "explanation": "Ostrzeżenie w treści głównej, nie w stopce.",
+        "legal_basis": "art. 44 ust. 2 lit. e rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "7",
+        "name": "Dostępność za 1 kliknięciem",
+        "status": "pass",
+        "confidence": 0.9,
+        "check_type": "render",
+        "weight": 0.7,
+        "explanation": "Ostrzeżenie widoczne bez klikania.",
+        "legal_basis": "art. 44 ust. 2 lit. b i e rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "8",
+        "name": "Responsywność (różne urządzenia)",
+        "status": "pass",
+        "confidence": 0.85,
+        "check_type": "render",
+        "weight": 0.5,
+        "explanation": "Ostrzeżenie widoczne i nieucięte we wszystkich 3 widokach.",
+        "legal_basis": "art. 44 ust. 2 lit. g rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "9",
+        "name": "Zrozumiałość dla grupy docelowej",
+        "status": "pass",
+        "confidence": 0.7,
+        "check_type": "llm",
+        "weight": 0.3,
+        "explanation": "Zdanie proste, bez żargonu.",
+        "legal_basis": "art. 44 ust. 2 lit. d rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "10",
+        "name": "Spójność językowa",
+        "status": "pass",
+        "confidence": 0.95,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Spójny język polski.",
+        "legal_basis": "art. 44 ust. 2 lit. f rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "11",
+        "name": "Porównania produktów / usług",
+        "status": "fail",
+        "confidence": 0.6,
+        "check_type": "llm",
+        "weight": 0.5,
+        "explanation": "Porównanie („najlepszy wynik wśród portfeli modelowych”) bez źródła i założeń.",
+        "legal_basis": "art. 44 ust. 3 rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Najlepszy wynik wśród portfeli modelowych w Polsce.",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "12a",
+        "name": "Wyniki historyczne: okres i zakres",
+        "status": "fail",
+        "confidence": 0.85,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Wynik tylko za 3 lata (2023–2025) zamiast 5 lat; brak źródła danych.",
+        "legal_basis": "art. 44 ust. 4 rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Wynik za lata 2023–2025, stopa zwrotu brutto.",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "12b",
+        "name": "Wyniki historyczne: warunki i waluta",
+        "status": "fail",
+        "confidence": 0.6,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Stopa zwrotu brutto bez informacji o wpływie opłat i prowizji.",
+        "legal_basis": "art. 44 ust. 4 rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "stopa zwrotu brutto",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "13",
+        "name": "Dominacja wyników historycznych",
+        "status": "fail",
+        "confidence": 0.75,
+        "check_type": "render",
+        "weight": 0.5,
+        "explanation": "Wynik +68% jest największym elementem strony (56 px, pierwszy ekran).",
+        "legal_basis": "art. 44 ust. 4 lit. a rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Portfel Wisła Dywidenda: +68% w 3 lata!",
+            "viewport": "desktop",
+            "bbox": [
+              80,
+              140,
+              1100,
+              68
+            ],
+            "measurements": {
+              "font_px": 56,
+              "dominant_font_px": 16
+            }
+          }
+        ]
+      },
+      {
+        "rule_id": "14",
+        "name": "Ostrzeżenie przy wynikach historycznych",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "text",
+        "weight": 0.7,
+        "explanation": "Brak zastrzeżenia, że wyniki historyczne nie są wiarygodnym wskaźnikiem przyszłych wyników.",
+        "legal_basis": "art. 44 ust. 4 lit. d rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "15",
+        "name": "Prognozy przyszłych wyników",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 6 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "16",
+        "name": "Informacja podatkowa",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 7 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "17",
+        "name": "Zakaz sugerowania aprobaty organu nadzoru",
+        "status": "fail",
+        "confidence": 0.8,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Sugestia, że KNF zatwierdziła strategię.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Strategia zatwierdzona przez Komisję Nadzoru Finansowego.",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "18",
+        "name": "Nadzór jako argument bezpieczeństwa",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Nadzór KNF użyty jako argument bezpieczeństwa środków.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "jest nadzorowany przez KNF – Twoje pieniądze są u nas bezpieczne",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      }
+    ],
+    "model": "bielik-11b-v3.1+rules-v1",
+    "used_llm": true,
+    "duplicates": 0,
+    "status": "in_review",
+    "created_at": "2026-11-17T09:02:10Z"
+  },
+  {
+    "id": "f0000000-0000-4000-8000-000000000007",
+    "post_id": "a0000000-0000-4000-8000-000000000006",
+    "module": "m2_risk_disclosure",
+    "score": 0.658,
+    "risk_level": "medium",
+    "explanation": "Reklama Nordvik po polsku z ostrzeżeniem po angielsku i porównaniem do lokaty bez źródła. Część reguł renderu nieoceniona (brak zrzutu).",
+    "quotes": [
+      "nawet 3× więcej niż na lokacie",
+      "CFDs are complex instruments"
+    ],
+    "firm": {
+      "id": "c0000000-0000-4000-8000-000000000005",
+      "name": "Nordvik Markets ApS Spółka Akcyjna Oddział w Polsce",
+      "aliases": [
+        "Nordvik",
+        "Nordvik Markets"
+      ],
+      "domains": [
+        "nordvikmarkets.example"
+      ],
+      "handles": [
+        "@nordvikmarkets"
+      ],
+      "kind": "oddzial_zagraniczny",
+      "country": "DK",
+      "services": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_firmy_inwestycyjne_oddzialy"
+    },
+    "firm_match": {
+      "firm": {
+        "id": "c0000000-0000-4000-8000-000000000005",
+        "name": "Nordvik Markets ApS Spółka Akcyjna Oddział w Polsce",
+        "aliases": [
+          "Nordvik",
+          "Nordvik Markets"
+        ],
+        "domains": [
+          "nordvikmarkets.example"
+        ],
+        "handles": [
+          "@nordvikmarkets"
+        ],
+        "kind": "oddzial_zagraniczny",
+        "country": "DK",
+        "services": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_firmy_inwestycyjne_oddzialy"
+      },
+      "confidence": 0.95,
+      "method": "handle",
+      "matched_text": "Nordvik Markets",
+      "on": "author"
+    },
+    "advertiser": null,
+    "rules": [
+      {
+        "rule_id": "1",
+        "name": "Identyfikacja firmy",
+        "status": "fail",
+        "confidence": 0.6,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Tylko marka „Nordvik”, bez pełnej nazwy firmy z formą prawną.",
+        "legal_basis": "art. 44 ust. 2 lit. a rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Nordvik",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "2",
+        "name": "Oznaczenie reklamy",
+        "status": "pass",
+        "confidence": 0.9,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Oznaczenie „Sponsorowane”.",
+        "legal_basis": "art. 24 ust. 3 MiFID II",
+        "evidence": [
+          {
+            "quote": "Sponsorowane.",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "3",
+        "name": "Informacja o ryzyku",
+        "status": "pass",
+        "confidence": 0.75,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Ostrzeżenie CFD obecne obok twierdzenia o zysku.",
+        "legal_basis": "art. 44 ust. 2 lit. b rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "4",
+        "name": "Rozmiar czcionki ryzyka",
+        "status": "unknown",
+        "confidence": 0.0,
+        "check_type": "render",
+        "weight": 0.6,
+        "explanation": "Brak renderu strony (reklama z biblioteki reklam Meta); nie udało się ocenić.",
+        "legal_basis": "art. 44 ust. 2 lit. c rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "5",
+        "name": "Ekspozycja i kontrast ryzyka",
+        "status": "unknown",
+        "confidence": 0.0,
+        "check_type": "render",
+        "weight": 0.6,
+        "explanation": "Brak renderu strony (reklama z biblioteki reklam Meta); nie udało się ocenić.",
+        "legal_basis": "art. 44 ust. 2 lit. c i e rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "6",
+        "name": "Zakrywanie / ukrywanie ryzyka",
+        "status": "unknown",
+        "confidence": 0.0,
+        "check_type": "render",
+        "weight": 0.7,
+        "explanation": "Brak renderu strony (reklama z biblioteki reklam Meta); nie udało się ocenić.",
+        "legal_basis": "art. 44 ust. 2 lit. e rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "7",
+        "name": "Dostępność za 1 kliknięciem",
+        "status": "pass",
+        "confidence": 0.8,
+        "check_type": "render",
+        "weight": 0.7,
+        "explanation": "Ostrzeżenie widoczne w treści reklamy.",
+        "legal_basis": "art. 44 ust. 2 lit. b i e rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "8",
+        "name": "Responsywność (różne urządzenia)",
+        "status": "unknown",
+        "confidence": 0.0,
+        "check_type": "render",
+        "weight": 0.5,
+        "explanation": "Brak renderu strony (reklama z biblioteki reklam Meta); nie udało się ocenić.",
+        "legal_basis": "art. 44 ust. 2 lit. g rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "9",
+        "name": "Zrozumiałość dla grupy docelowej",
+        "status": "pass",
+        "confidence": 0.5,
+        "check_type": "llm",
+        "weight": 0.3,
+        "explanation": "Ostrzeżenie standardowe.",
+        "legal_basis": "art. 44 ust. 2 lit. d rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "10",
+        "name": "Spójność językowa",
+        "status": "fail",
+        "confidence": 0.8,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Reklama po polsku, ostrzeżenie o ryzyku po angielsku.",
+        "legal_basis": "art. 44 ust. 2 lit. f rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {
+              "lang_main": "pl",
+              "lang_risk": "en"
+            }
+          }
+        ]
+      },
+      {
+        "rule_id": "11",
+        "name": "Porównania produktów / usług",
+        "status": "fail",
+        "confidence": 0.5,
+        "check_type": "llm",
+        "weight": 0.5,
+        "explanation": "Porównanie z lokatą („3× więcej”) bez źródła i założeń.",
+        "legal_basis": "art. 44 ust. 3 rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "nawet 3× więcej niż na lokacie",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "12a",
+        "name": "Wyniki historyczne: okres i zakres",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "12b",
+        "name": "Wyniki historyczne: warunki i waluta",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "13",
+        "name": "Dominacja wyników historycznych",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "render",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 lit. a rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "14",
+        "name": "Ostrzeżenie przy wynikach historycznych",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 lit. d rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "15",
+        "name": "Prognozy przyszłych wyników",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 6 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "16",
+        "name": "Informacja podatkowa",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 7 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "17",
+        "name": "Zakaz sugerowania aprobaty organu nadzoru",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "18",
+        "name": "Nadzór jako argument bezpieczeństwa",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      }
+    ],
+    "model": "bielik-11b-v3.1+rules-v1",
+    "used_llm": true,
+    "duplicates": 0,
+    "status": "new",
+    "created_at": "2026-11-20T08:16:30Z"
+  },
+  {
+    "id": "f0000000-0000-4000-8000-000000000008",
+    "post_id": "a0000000-0000-4000-8000-000000000005",
+    "module": "m2_risk_disclosure",
+    "score": 0.12,
+    "risk_level": "low",
+    "explanation": "Strona IKE w MBI spełnia wymogi: oznaczenie, ostrzeżenie o ryzyku i zastrzeżenie podatkowe. Drobna uwaga o długości zdania.",
+    "quotes": [
+      "Sposób opodatkowania zależy od indywidualnej sytuacji klienta"
+    ],
+    "firm": {
+      "id": "c0000000-0000-4000-8000-000000000003",
+      "name": "Mazowiecki Bank Inwestycyjny S.A.",
+      "aliases": [
+        "MBI",
+        "MBI Makler"
+      ],
+      "domains": [
+        "mbi.example"
+      ],
+      "handles": [
+        "@mbi_bank"
+      ],
+      "kind": "bank_maklerski",
+      "country": "PL",
+      "services": [
+        "A1",
+        "A2",
+        "A5"
+      ],
+      "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/Banki_prowadzace_dzialalnosc_maklerska"
+    },
+    "firm_match": {
+      "firm": {
+        "id": "c0000000-0000-4000-8000-000000000003",
+        "name": "Mazowiecki Bank Inwestycyjny S.A.",
+        "aliases": [
+          "MBI",
+          "MBI Makler"
+        ],
+        "domains": [
+          "mbi.example"
+        ],
+        "handles": [
+          "@mbi_bank"
+        ],
+        "kind": "bank_maklerski",
+        "country": "PL",
+        "services": [
+          "A1",
+          "A2",
+          "A5"
+        ],
+        "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/Banki_prowadzace_dzialalnosc_maklerska"
+      },
+      "confidence": 1.0,
+      "method": "domain",
+      "matched_text": "mbi.example",
+      "on": "author"
+    },
+    "advertiser": null,
+    "rules": [
+      {
+        "rule_id": "1",
+        "name": "Identyfikacja firmy",
+        "status": "pass",
+        "confidence": 0.95,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Pełna nazwa banku w treści.",
+        "legal_basis": "art. 44 ust. 2 lit. a rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Mazowieckiego Banku Inwestycyjnego S.A.",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "2",
+        "name": "Oznaczenie reklamy",
+        "status": "pass",
+        "confidence": 0.95,
+        "check_type": "text",
+        "weight": 0.4,
+        "explanation": "Oznaczenie „Materiał marketingowy”.",
+        "legal_basis": "art. 24 ust. 3 MiFID II",
+        "evidence": [
+          {
+            "quote": "Materiał marketingowy",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "3",
+        "name": "Informacja o ryzyku",
+        "status": "pass",
+        "confidence": 0.85,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Korzyść podatkowa z ostrzeżeniem o utracie kapitału.",
+        "legal_basis": "art. 44 ust. 2 lit. b rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "4",
+        "name": "Rozmiar czcionki ryzyka",
+        "status": "pass",
+        "confidence": 0.9,
+        "check_type": "render",
+        "weight": 0.6,
+        "explanation": "Czcionka ostrzeżenia równa dominującej.",
+        "legal_basis": "art. 44 ust. 2 lit. c rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Inwestowanie w instrumenty finansowe wiąże się z ryzykiem",
+            "viewport": "desktop",
+            "bbox": [
+              80,
+              960,
+              1040,
+              48
+            ],
+            "measurements": {
+              "risk_font_px": 16,
+              "dominant_font_px": 16,
+              "ratio": 1.0
+            }
+          }
+        ]
+      },
+      {
+        "rule_id": "5",
+        "name": "Ekspozycja i kontrast ryzyka",
+        "status": "pass",
+        "confidence": 0.85,
+        "check_type": "render",
+        "weight": 0.6,
+        "explanation": "Kontrast 9,7:1.",
+        "legal_basis": "art. 44 ust. 2 lit. c i e rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "6",
+        "name": "Zakrywanie / ukrywanie ryzyka",
+        "status": "pass",
+        "confidence": 0.85,
+        "check_type": "render",
+        "weight": 0.7,
+        "explanation": "Ostrzeżenie w treści głównej.",
+        "legal_basis": "art. 44 ust. 2 lit. e rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "7",
+        "name": "Dostępność za 1 kliknięciem",
+        "status": "pass",
+        "confidence": 0.9,
+        "check_type": "render",
+        "weight": 0.7,
+        "explanation": "Widoczne bez kliknięcia.",
+        "legal_basis": "art. 44 ust. 2 lit. b i e rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "8",
+        "name": "Responsywność (różne urządzenia)",
+        "status": "pass",
+        "confidence": 0.85,
+        "check_type": "render",
+        "weight": 0.5,
+        "explanation": "Czytelne na wszystkich ekranach (min. 15 px).",
+        "legal_basis": "art. 44 ust. 2 lit. g rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "9",
+        "name": "Zrozumiałość dla grupy docelowej",
+        "status": "fail",
+        "confidence": 0.4,
+        "check_type": "llm",
+        "weight": 0.3,
+        "explanation": "Zdanie o opodatkowaniu długie (38 słów), możliwe trudności dla części odbiorców.",
+        "legal_basis": "art. 44 ust. 2 lit. d rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "10",
+        "name": "Spójność językowa",
+        "status": "pass",
+        "confidence": 0.95,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Spójny język polski.",
+        "legal_basis": "art. 44 ust. 2 lit. f rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "11",
+        "name": "Porównania produktów / usług",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 3 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "12a",
+        "name": "Wyniki historyczne: okres i zakres",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "12b",
+        "name": "Wyniki historyczne: warunki i waluta",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "13",
+        "name": "Dominacja wyników historycznych",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "render",
+        "weight": 0.5,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 lit. a rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "14",
+        "name": "Ostrzeżenie przy wynikach historycznych",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "text",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 4 lit. d rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "15",
+        "name": "Prognozy przyszłych wyników",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.7,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 6 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "16",
+        "name": "Informacja podatkowa",
+        "status": "pass",
+        "confidence": 0.9,
+        "check_type": "text",
+        "weight": 0.5,
+        "explanation": "Informacja podatkowa z zastrzeżeniem o indywidualnej sytuacji i możliwych zmianach.",
+        "legal_basis": "art. 44 ust. 7 rozporządzenia del. 2017/565",
+        "evidence": [
+          {
+            "quote": "Sposób opodatkowania zależy od indywidualnej sytuacji klienta i może ulec zmianie w przyszłości.",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "17",
+        "name": "Zakaz sugerowania aprobaty organu nadzoru",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      },
+      {
+        "rule_id": "18",
+        "name": "Nadzór jako argument bezpieczeństwa",
+        "status": "na",
+        "confidence": 1.0,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Reguła nie ma zastosowania do tego materiału.",
+        "legal_basis": "art. 44 ust. 8 rozporządzenia del. 2017/565",
+        "evidence": []
+      }
+    ],
+    "model": "rules-v1",
+    "used_llm": false,
+    "duplicates": 0,
+    "status": "dismissed",
+    "created_at": "2026-11-16T11:21:00Z"
+  },
+  {
+    "id": "f0000000-0000-4000-8000-000000000009",
+    "post_id": "a0000000-0000-4000-8000-000000000007",
+    "module": "m3_shadow_advisory",
+    "score": 0.93,
+    "risk_level": "high",
+    "explanation": "„Kowalski Family Office” oferuje spersonalizowane rekomendacje i zarządzanie portfelem bez wpisu w rejestrach KNF. Zastrzeżenie „nie stanowią porady” nie zmienia charakteru oferty.",
+    "quotes": [
+      "Tworzymy portfel szyty na miarę",
+      "inwestujemy w Twoim imieniu"
+    ],
+    "firm": null,
+    "firm_match": null,
+    "advertiser": "Kowalski Family Office",
+    "rules": [
+      {
+        "rule_id": "76a",
+        "name": "Rekomendacja spersonalizowana",
+        "status": "fail",
+        "confidence": 0.95,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Rekomendacja dopasowana do sytuacji klienta (ankieta, indywidualna strategia).",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "portfel szyty na miarę, dopasowany do Twojej sytuacji i celów",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "76b",
+        "name": "Dotyczy instrumentów finansowych",
+        "status": "fail",
+        "confidence": 0.95,
+        "check_type": "llm",
+        "weight": 0.5,
+        "explanation": "Dotyczy akcji i obligacji.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "które akcje i obligacje kupić",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "76c",
+        "name": "Rekomendacja kup / sprzedaj / trzymaj",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Wskazanie, co kupić, a co sprzedać.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "Powiemy Ci dokładnie, które akcje i obligacje kupić, a które sprzedać.",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "76d",
+        "name": "Usługa oferowana w Polsce",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "llm",
+        "weight": 0.4,
+        "explanation": "Oferta w PLN, adres w Warszawie.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "Abonament Premium: 499 zł/mies.",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "76e",
+        "name": "Zarządzanie cudzym portfelem",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Zarządzanie kapitałem klienta w jego imieniu.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "Zarządzamy Twoim kapitałem od 200 000 zł",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      }
+    ],
+    "model": "bielik-11b-v3.1+rules-v1",
+    "used_llm": true,
+    "duplicates": 0,
+    "status": "confirmed",
+    "created_at": "2026-11-19T15:41:30Z"
+  },
+  {
+    "id": "f0000000-0000-4000-8000-000000000010",
+    "post_id": "a0000000-0000-4000-8000-000000000008",
+    "module": "m3_shadow_advisory",
+    "score": 0.86,
+    "risk_level": "high",
+    "explanation": "Płatna grupa sygnałów kup/sprzedaj na instrumenty z GPW, prowadzona przez podmiot spoza rejestrów KNF.",
+    "quotes": [
+      "Sygnały kup/sprzedaj na kontrakty WIG20",
+      "Dostęp do grupy Premium: 199 zł/mies."
+    ],
+    "firm": null,
+    "firm_match": null,
+    "advertiser": "@TomaszTraderSygnaly",
+    "rules": [
+      {
+        "rule_id": "76a",
+        "name": "Rekomendacja spersonalizowana",
+        "status": "pass",
+        "confidence": 0.6,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Sygnały wysyłane do całej grupy, bez personalizacji.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": []
+      },
+      {
+        "rule_id": "76b",
+        "name": "Dotyczy instrumentów finansowych",
+        "status": "fail",
+        "confidence": 0.95,
+        "check_type": "llm",
+        "weight": 0.5,
+        "explanation": "Kontrakty terminowe na WIG20 i akcje z GPW.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "kontrakty WIG20 i akcje z GPW",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "76c",
+        "name": "Rekomendacja kup / sprzedaj / trzymaj",
+        "status": "fail",
+        "confidence": 0.95,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Sygnały kupna i sprzedaży.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "Sygnały kup/sprzedaj",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "76d",
+        "name": "Usługa oferowana w Polsce",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "llm",
+        "weight": 0.4,
+        "explanation": "Płatny dostęp w PLN przez BLIK.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "199 zł/mies., płatność BLIK",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "76e",
+        "name": "Zarządzanie cudzym portfelem",
+        "status": "pass",
+        "confidence": 0.8,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Element nie występuje w materiale.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": []
+      }
+    ],
+    "model": "bielik-11b-v3.1+rules-v1",
+    "used_llm": true,
+    "duplicates": 0,
+    "status": "in_review",
+    "created_at": "2026-11-20T20:11:05Z"
+  },
+  {
+    "id": "f0000000-0000-4000-8000-000000000011",
+    "post_id": "a0000000-0000-4000-8000-000000000001",
+    "module": "m3_shadow_advisory",
+    "score": 0.58,
+    "risk_level": "medium",
+    "explanation": "Finfluencerka oferuje płatne konsultacje 1:1 z doborem ETF-ów; podmiot spoza rejestrów. Wymaga weryfikacji przez analityka.",
+    "quotes": [
+      "Konsultacje 1:1 – dobiorę ETF-y pod Twoją sytuację, 300 zł za godzinę"
+    ],
+    "firm": null,
+    "firm_match": null,
+    "advertiser": "@InwestujZKasia",
+    "rules": [
+      {
+        "rule_id": "76a",
+        "name": "Rekomendacja spersonalizowana",
+        "status": "fail",
+        "confidence": 0.8,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Dobór ETF-ów pod sytuację konkretnej osoby.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "dobiorę ETF-y pod Twoją sytuację",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "76b",
+        "name": "Dotyczy instrumentów finansowych",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "llm",
+        "weight": 0.5,
+        "explanation": "ETF-y to instrumenty finansowe.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "ETF-y",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "76c",
+        "name": "Rekomendacja kup / sprzedaj / trzymaj",
+        "status": "unknown",
+        "confidence": 0.0,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Nie wiadomo, czy konsultacja kończy się rekomendacją kupna/sprzedaży.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": []
+      },
+      {
+        "rule_id": "76d",
+        "name": "Usługa oferowana w Polsce",
+        "status": "fail",
+        "confidence": 0.85,
+        "check_type": "llm",
+        "weight": 0.4,
+        "explanation": "Cena w PLN, język polski.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "300 zł za godzinę",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "76e",
+        "name": "Zarządzanie cudzym portfelem",
+        "status": "pass",
+        "confidence": 0.7,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Element nie występuje w materiale.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": []
+      }
+    ],
+    "model": "bielik-11b-v3.1+rules-v1",
+    "used_llm": true,
+    "duplicates": 0,
+    "status": "new",
+    "created_at": "2026-11-14T18:06:12Z"
+  },
+  {
+    "id": "f0000000-0000-4000-8000-000000000012",
+    "post_id": "a0000000-0000-4000-8000-000000000002",
+    "module": "m3_shadow_advisory",
+    "score": 0.08,
+    "risk_level": "low",
+    "explanation": "Recenzja platformy brokerskiej, bez rekomendacji i bez oferty usług doradczych.",
+    "quotes": [
+      "Od miesiąca testuję ich platformę"
+    ],
+    "firm": null,
+    "firm_match": null,
+    "advertiser": "Marcin | Giełda bez tajemnic",
+    "rules": [
+      {
+        "rule_id": "76a",
+        "name": "Rekomendacja spersonalizowana",
+        "status": "pass",
+        "confidence": 0.85,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Element nie występuje w materiale.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": []
+      },
+      {
+        "rule_id": "76b",
+        "name": "Dotyczy instrumentów finansowych",
+        "status": "fail",
+        "confidence": 0.9,
+        "check_type": "llm",
+        "weight": 0.5,
+        "explanation": "Wzmianka o kontraktach CFD.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": [
+          {
+            "quote": "kontraktach na DAX i złoto",
+            "viewport": null,
+            "bbox": null,
+            "measurements": {}
+          }
+        ]
+      },
+      {
+        "rule_id": "76c",
+        "name": "Rekomendacja kup / sprzedaj / trzymaj",
+        "status": "pass",
+        "confidence": 0.8,
+        "check_type": "llm",
+        "weight": 0.9,
+        "explanation": "Element nie występuje w materiale.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": []
+      },
+      {
+        "rule_id": "76d",
+        "name": "Usługa oferowana w Polsce",
+        "status": "fail",
+        "confidence": 0.8,
+        "check_type": "llm",
+        "weight": 0.4,
+        "explanation": "Treść po polsku.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": []
+      },
+      {
+        "rule_id": "76e",
+        "name": "Zarządzanie cudzym portfelem",
+        "status": "pass",
+        "confidence": 0.85,
+        "check_type": "llm",
+        "weight": 0.8,
+        "explanation": "Element nie występuje w materiale.",
+        "legal_basis": "art. 76 ustawy o obrocie instrumentami finansowymi",
+        "evidence": []
+      }
+    ],
+    "model": "rules-v1",
+    "used_llm": false,
+    "duplicates": 0,
+    "status": "dismissed",
+    "created_at": "2026-11-18T12:01:40Z"
+  }
+]

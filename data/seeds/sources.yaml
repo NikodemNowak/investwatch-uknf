@@ -1,0 +1,108 @@
+# Starting sources for the live collectors. Loaded by `python -m investwatch.seed`
+# (existing names are left alone, so edits made in the UI survive a re-seed).
+#
+# Only compliant access paths (ADR 0008). Target syntax per collector:
+#   site             [N:]<domain or URL> | [N:]registry:<firm kind or all> | [N:]gdelt:<phrase>
+#                    (robots.txt -> sitemap.xml -> pages, fetched as InvestWatchBot)
+#   youtube          search:<N>:<query> | channel URL (@handle) | video URL   (YOUTUBE_API_KEY)
+#   meta_ad_library  [N:]<keywords> | page:<page id>                     (META_AD_LIBRARY_TOKEN)
+#   tiktok           [N:]<search term>             (TIKTOK_CLIENT_KEY + TIKTOK_CLIENT_SECRET)
+#   sample           "" (fixtures) | samples (data/samples/, UKNF booth) | synthetic
+#
+# A source whose connector has no credentials shows "wymaga klucza" / "wymaga zgody platformy"
+# on the Sources page and is skipped by the scheduler; nothing falls back to scraping.
+# Kept small on purpose: a few items per run, at most every 6 h, staggered minutes.
+
+sources:
+  # --- M2: materials published by KNF-registered firms themselves --------------------------
+  - name: "Strony firm z rejestru KNF: domy maklerskie (sitemap)"
+    collector: site
+    target: "3:registry:dom_maklerski"
+    module_hint: m2_risk_disclosure
+    cron: "7 */6 * * *"
+    enabled: true
+  - name: "Strony firm z rejestru KNF: banki z działalnością maklerską (sitemap)"
+    collector: site
+    target: "3:registry:bank_maklerski"
+    module_hint: m2_risk_disclosure
+    cron: "19 */6 * * *"
+    enabled: false
+  - name: "XTB: promocje i oferta (sitemap)"
+    collector: site
+    target: "3:xtb.com"
+    module_hint: m2_risk_disclosure
+    cron: "33 */12 * * *"
+    enabled: false
+  - name: "Demo: fikcyjne firmy (sitemap demo-sites)"
+    collector: site
+    target: "10:http://demo-sites"
+    module_hint: m2_risk_disclosure
+    cron: "3 */6 * * *"
+    enabled: true
+  - name: "Meta Ad Library: XTB"
+    collector: meta_ad_library
+    target: "5:XTB"
+    module_hint: m2_risk_disclosure
+    cron: "23 */12 * * *"
+    enabled: true
+  - name: "Meta Ad Library: bossa.pl (DM BOŚ)"
+    collector: meta_ad_library
+    target: "5:bossa.pl"
+    module_hint: m2_risk_disclosure
+    cron: "31 */12 * * *"
+    enabled: false
+
+  # --- M1: finfluencers and third parties advertising registered firms -----------------
+  - name: "YouTube: XTB kod promocyjny"
+    collector: youtube
+    target: "search:3:XTB kod promocyjny"
+    module_hint: m1_third_party_ad
+    cron: "17 */6 * * *"
+    enabled: true
+  - name: "YouTube: link afiliacyjny konto maklerskie"
+    collector: youtube
+    target: "search:3:link afiliacyjny konto maklerskie"
+    module_hint: m1_third_party_ad
+    cron: "29 */12 * * *"
+    enabled: false
+  - name: "YouTube: kanał Inwestomat (ostatnie filmy)"
+    collector: youtube
+    target: "https://www.youtube.com/@inwestomat"
+    module_hint: m1_third_party_ad
+    cron: "47 7 * * *"
+    enabled: false
+  - name: "Meta Ad Library: mBank konto maklerskie"
+    collector: meta_ad_library
+    target: "5:mBank konto maklerskie"
+    module_hint: m1_third_party_ad
+    cron: "39 */12 * * *"
+    enabled: false
+  - name: "TikTok Commercial Content: kod promocyjny broker"
+    collector: tiktok
+    target: "5:kod promocyjny broker"
+    module_hint: m1_third_party_ad
+    cron: "11 */12 * * *"
+    enabled: true
+
+  # --- M3: shadow advisory -----------------------------------------------------------------
+  # No search engine: M3 coverage comes from the analyst's seed domains, KNF warnings and,
+  # optionally, GDELT news (GDELT_ENABLED=true).
+  - name: "GDELT: sygnały giełdowe"
+    collector: site
+    target: "3:gdelt:sygnały giełdowe"
+    module_hint: m3_shadow_advisory
+    cron: "21 4 * * *"
+    enabled: false
+  - name: "Meta Ad Library: sygnały giełdowe"
+    collector: meta_ad_library
+    target: "5:sygnały giełdowe"
+    module_hint: m3_shadow_advisory
+    cron: "47 */12 * * *"
+    enabled: false
+
+  # --- Files --------------------------------------------------------------------------------
+  - name: "Próbki UKNF ze stoiska (data/samples)"
+    collector: sample
+    target: "samples"
+    cron: "0 3 * * *"
+    enabled: false

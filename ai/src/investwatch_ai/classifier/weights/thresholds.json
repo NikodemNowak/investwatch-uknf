@@ -1,0 +1,8 @@
+{
+  "thresholds": {
+    "m1_third_party_ad": 0.2,
+    "m2_risk_disclosure": 0.3,
+    "m3_shadow_advisory": 0.12
+  },
+  "method": "F2 optimum on the train split (heads: calibrated out-of-fold CV)"
+}

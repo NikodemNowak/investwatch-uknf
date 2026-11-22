@@ -1,0 +1,9 @@
+# Demo site of fictional firms. One page is closed to InvestWatchBot on purpose, to show that
+# the crawler obeys robots.txt (POST /api/check -> fetch_status=blocked).
+User-agent: InvestWatchBot
+Disallow: /zablokowana-robots.html
+
+User-agent: *
+Allow: /
+
+Sitemap: http://demo-sites/sitemap.xml

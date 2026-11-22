@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo-sites: Aurora Kapitał (fikcyjna firma)</title>
+  <link rel="stylesheet" href="aurora.css">
+</head>
+<body>
+  <main>
+    <h1>Strony testowe InvestWatch</h1>
+    <p>Fikcyjna firma „Aurora Kapitał”. Wszystkie dane są zmyślone. Pary stron zgodna / niezgodna
+       dla reguł z załącznika 4.</p>
+    <ul>
+      <li><a href="compliant.html">compliant.html</a>: wzorcowa reklama (wszystkie reguły renderu spełnione)</li>
+      <li><a href="ok.html">ok.html</a>: reklama funduszu z wyważoną informacją o ryzyku</li>
+      <li><a href="ok-maly-druk.html">ok-maly-druk.html</a>: ten sam tekst co ok.html, ostrzeżenie 9 px (deduplikacja: tekst + układ)</li>
+      <li><a href="no-risk.html">no-risk.html</a>: reguła 3, zyski bez ostrzeżenia</li>
+      <li><a href="tiny-font.html">tiny-font.html</a>: reguła 4, ostrzeżenie 10 px przy tekście 16 px</li>
+      <li><a href="low-contrast.html">low-contrast.html</a>: reguła 5, jasnoszary tekst na białym tle</li>
+      <li><a href="occluded-risk.html">occluded-risk.html</a>: reguła 5, ostrzeżenie zasłonięte naklejką promocyjną</li>
+      <li><a href="footer-risk.html">footer-risk.html</a>: reguła 6, ostrzeżenie tylko w stopce</li>
+      <li><a href="collapsed-risk.html">collapsed-risk.html</a>: reguła 7, ostrzeżenie dopiero po kliknięciu</li>
+      <li><a href="mobile-clipped.html">mobile-clipped.html</a>: reguła 8, ostrzeżenie ucięte na telefonie</li>
+      <li><a href="past-performance.html">past-performance.html</a>: reguły 13 i 14, dominujący wynik bez zastrzeżenia</li>
+      <li><a href="past-performance-ok.html">past-performance-ok.html</a>: reguły 12–14, wyniki z zastrzeżeniami</li>
+      <li><a href="promo-zloto.html">promo-zloto.html</a>: strona z danych demonstracyjnych (fikcyjny PrimeFX24): 9 px w stopce, zwinięte na telefonie</li>
+      <li><a href="hidden-risk.html">hidden-risk.html</a>: reguły 4–8, ostrzeżenie zwinięte w stopce, 9 px, niski kontrast</li>
+      <li><a href="tdm-zastrzezone.html">tdm-zastrzezone.html</a>: zastrzeżenie TDM (meta tdm-reservation), crawler odmawia</li>
+      <li><a href="zablokowana-robots.html">zablokowana-robots.html</a>: zamknięta w robots.txt dla InvestWatchBot, crawler odmawia</li>
+    </ul>
+  </main>
+</body>
+</html>

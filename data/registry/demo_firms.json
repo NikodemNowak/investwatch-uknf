@@ -1,0 +1,51 @@
+{
+  "_comment": "Fictional firms of the demo pages (demo-sites/). Merged by id with data/fixtures/firms.json. A domain entry with a path ('host/path') claims only that URL prefix, so one demo host can serve several fictional firms. Loaded only when REGISTRY_DEMO_FIRMS points here (default).",
+  "firms": [
+    {
+      "id": "d0000000-0000-4000-8000-000000000001",
+      "name": "Aurora Kapitał Dom Maklerski S.A.",
+      "aliases": [
+        "Aurora Kapitał"
+      ],
+      "domains": [
+        "aurorakapital.example",
+        "demo-sites"
+      ],
+      "handles": [
+        "@aurorakapital"
+      ],
+      "kind": "dom_maklerski",
+      "country": "PL",
+      "services": [
+        "A1",
+        "A2",
+        "A4",
+        "A5"
+      ],
+      "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/domy_maklerskie"
+    },
+    {
+      "id": "c0000000-0000-4000-8000-000000000007",
+      "name": "Kyrenia Prime Ltd",
+      "aliases": [
+        "PrimeFX24",
+        "Kyrenia Prime"
+      ],
+      "domains": [
+        "primefx24.example",
+        "demo-sites/promo-zloto.html"
+      ],
+      "handles": [
+        "@primefx24"
+      ],
+      "kind": "zagraniczna_bez_oddzialu",
+      "country": "CY",
+      "services": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_zagraniczne_firmy_inwestycyjne"
+    }
+  ]
+}

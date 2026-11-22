@@ -1,0 +1,171 @@
+[
+  {
+    "id": "c0000000-0000-4000-8000-000000000001",
+    "name": "Dom Maklerski Złoty Róg S.A.",
+    "aliases": [
+      "Złoty Róg",
+      "ZłotyRóg Trader"
+    ],
+    "domains": [
+      "zlotyrog.example"
+    ],
+    "handles": [
+      "@zlotyrog_dm"
+    ],
+    "kind": "dom_maklerski",
+    "country": "PL",
+    "services": [
+      "A1",
+      "A2",
+      "A3",
+      "A4"
+    ],
+    "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/domy_maklerskie"
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000002",
+    "name": "Dom Maklerski Wisła Capital S.A.",
+    "aliases": [
+      "Wisła Capital",
+      "DM Wisła"
+    ],
+    "domains": [
+      "wislacapital.example"
+    ],
+    "handles": [
+      "@wislacapital"
+    ],
+    "kind": "dom_maklerski",
+    "country": "PL",
+    "services": [
+      "A1",
+      "A2",
+      "A4",
+      "A5",
+      "A7"
+    ],
+    "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/domy_maklerskie"
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000003",
+    "name": "Mazowiecki Bank Inwestycyjny S.A.",
+    "aliases": [
+      "MBI",
+      "MBI Makler"
+    ],
+    "domains": [
+      "mbi.example"
+    ],
+    "handles": [
+      "@mbi_bank"
+    ],
+    "kind": "bank_maklerski",
+    "country": "PL",
+    "services": [
+      "A1",
+      "A2",
+      "A5"
+    ],
+    "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/Banki_prowadzace_dzialalnosc_maklerska"
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000004",
+    "name": "Pomorski Bank Kredytowy S.A.",
+    "aliases": [
+      "PBK",
+      "PBK Inwestycje"
+    ],
+    "domains": [
+      "pbk.example"
+    ],
+    "handles": [],
+    "kind": "bank_maklerski",
+    "country": "PL",
+    "services": [
+      "A1",
+      "A2"
+    ],
+    "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/Banki_prowadzace_dzialalnosc_maklerska"
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000005",
+    "name": "Nordvik Markets ApS Spółka Akcyjna Oddział w Polsce",
+    "aliases": [
+      "Nordvik",
+      "Nordvik Markets"
+    ],
+    "domains": [
+      "nordvikmarkets.example"
+    ],
+    "handles": [
+      "@nordvikmarkets"
+    ],
+    "kind": "oddzial_zagraniczny",
+    "country": "DK",
+    "services": [
+      "A1",
+      "A2",
+      "A3"
+    ],
+    "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_firmy_inwestycyjne_oddzialy"
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000006",
+    "name": "Alpine Trade AG Oddział w Polsce",
+    "aliases": [
+      "Alpine Trade"
+    ],
+    "domains": [
+      "alpinetrade.example"
+    ],
+    "handles": [],
+    "kind": "oddzial_zagraniczny",
+    "country": "AT",
+    "services": [
+      "A1",
+      "A4",
+      "A5"
+    ],
+    "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_firmy_inwestycyjne_oddzialy"
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000007",
+    "name": "Kyrenia Prime Ltd",
+    "aliases": [
+      "PrimeFX24",
+      "Kyrenia Prime"
+    ],
+    "domains": [
+      "primefx24.example"
+    ],
+    "handles": [
+      "@primefx24"
+    ],
+    "kind": "zagraniczna_bez_oddzialu",
+    "country": "CY",
+    "services": [
+      "A1",
+      "A2",
+      "A3"
+    ],
+    "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_zagraniczne_firmy_inwestycyjne"
+  },
+  {
+    "id": "c0000000-0000-4000-8000-000000000008",
+    "name": "Baltic Wave Investments AS",
+    "aliases": [
+      "Baltic Wave"
+    ],
+    "domains": [
+      "balticwave.example"
+    ],
+    "handles": [],
+    "kind": "zagraniczna_bez_oddzialu",
+    "country": "EE",
+    "services": [
+      "A1",
+      "A4"
+    ],
+    "register_url": "https://www.knf.gov.pl/podmioty/Podmioty_rynku_kapitalowego/Firmy_inwestycyjne_i_Agenci_firm_inwestycyjnych/notyfikowane_zagraniczne_firmy_inwestycyjne"
+  }
+]

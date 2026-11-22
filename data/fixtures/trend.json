@@ -1,0 +1,343 @@
+{
+  "bucket": "day",
+  "start": "2026-11-08",
+  "end": "2026-11-21",
+  "points": [
+    {
+      "bucket_start": "2026-11-08",
+      "module": "m1_third_party_ad",
+      "total": 11,
+      "high": 1,
+      "medium": 3,
+      "low": 7
+    },
+    {
+      "bucket_start": "2026-11-08",
+      "module": "m2_risk_disclosure",
+      "total": 3,
+      "high": 0,
+      "medium": 0,
+      "low": 3
+    },
+    {
+      "bucket_start": "2026-11-08",
+      "module": "m3_shadow_advisory",
+      "total": 5,
+      "high": 0,
+      "medium": 2,
+      "low": 3
+    },
+    {
+      "bucket_start": "2026-11-09",
+      "module": "m1_third_party_ad",
+      "total": 9,
+      "high": 0,
+      "medium": 0,
+      "low": 9
+    },
+    {
+      "bucket_start": "2026-11-09",
+      "module": "m2_risk_disclosure",
+      "total": 9,
+      "high": 3,
+      "medium": 0,
+      "low": 6
+    },
+    {
+      "bucket_start": "2026-11-09",
+      "module": "m3_shadow_advisory",
+      "total": 3,
+      "high": 0,
+      "medium": 1,
+      "low": 2
+    },
+    {
+      "bucket_start": "2026-11-10",
+      "module": "m1_third_party_ad",
+      "total": 6,
+      "high": 2,
+      "medium": 0,
+      "low": 4
+    },
+    {
+      "bucket_start": "2026-11-10",
+      "module": "m2_risk_disclosure",
+      "total": 6,
+      "high": 2,
+      "medium": 2,
+      "low": 2
+    },
+    {
+      "bucket_start": "2026-11-10",
+      "module": "m3_shadow_advisory",
+      "total": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    {
+      "bucket_start": "2026-11-11",
+      "module": "m1_third_party_ad",
+      "total": 10,
+      "high": 0,
+      "medium": 4,
+      "low": 6
+    },
+    {
+      "bucket_start": "2026-11-11",
+      "module": "m2_risk_disclosure",
+      "total": 6,
+      "high": 1,
+      "medium": 1,
+      "low": 4
+    },
+    {
+      "bucket_start": "2026-11-11",
+      "module": "m3_shadow_advisory",
+      "total": 3,
+      "high": 0,
+      "medium": 1,
+      "low": 2
+    },
+    {
+      "bucket_start": "2026-11-12",
+      "module": "m1_third_party_ad",
+      "total": 9,
+      "high": 0,
+      "medium": 4,
+      "low": 5
+    },
+    {
+      "bucket_start": "2026-11-12",
+      "module": "m2_risk_disclosure",
+      "total": 7,
+      "high": 1,
+      "medium": 0,
+      "low": 6
+    },
+    {
+      "bucket_start": "2026-11-12",
+      "module": "m3_shadow_advisory",
+      "total": 2,
+      "high": 0,
+      "medium": 0,
+      "low": 2
+    },
+    {
+      "bucket_start": "2026-11-13",
+      "module": "m1_third_party_ad",
+      "total": 14,
+      "high": 4,
+      "medium": 3,
+      "low": 7
+    },
+    {
+      "bucket_start": "2026-11-13",
+      "module": "m2_risk_disclosure",
+      "total": 9,
+      "high": 3,
+      "medium": 3,
+      "low": 3
+    },
+    {
+      "bucket_start": "2026-11-13",
+      "module": "m3_shadow_advisory",
+      "total": 6,
+      "high": 1,
+      "medium": 0,
+      "low": 5
+    },
+    {
+      "bucket_start": "2026-11-14",
+      "module": "m1_third_party_ad",
+      "total": 10,
+      "high": 1,
+      "medium": 0,
+      "low": 9
+    },
+    {
+      "bucket_start": "2026-11-14",
+      "module": "m2_risk_disclosure",
+      "total": 9,
+      "high": 3,
+      "medium": 2,
+      "low": 4
+    },
+    {
+      "bucket_start": "2026-11-14",
+      "module": "m3_shadow_advisory",
+      "total": 9,
+      "high": 2,
+      "medium": 0,
+      "low": 7
+    },
+    {
+      "bucket_start": "2026-11-15",
+      "module": "m1_third_party_ad",
+      "total": 9,
+      "high": 3,
+      "medium": 1,
+      "low": 5
+    },
+    {
+      "bucket_start": "2026-11-15",
+      "module": "m2_risk_disclosure",
+      "total": 10,
+      "high": 1,
+      "medium": 3,
+      "low": 6
+    },
+    {
+      "bucket_start": "2026-11-15",
+      "module": "m3_shadow_advisory",
+      "total": 8,
+      "high": 0,
+      "medium": 0,
+      "low": 8
+    },
+    {
+      "bucket_start": "2026-11-16",
+      "module": "m1_third_party_ad",
+      "total": 13,
+      "high": 2,
+      "medium": 5,
+      "low": 6
+    },
+    {
+      "bucket_start": "2026-11-16",
+      "module": "m2_risk_disclosure",
+      "total": 10,
+      "high": 3,
+      "medium": 3,
+      "low": 4
+    },
+    {
+      "bucket_start": "2026-11-16",
+      "module": "m3_shadow_advisory",
+      "total": 3,
+      "high": 0,
+      "medium": 1,
+      "low": 2
+    },
+    {
+      "bucket_start": "2026-11-17",
+      "module": "m1_third_party_ad",
+      "total": 16,
+      "high": 5,
+      "medium": 5,
+      "low": 6
+    },
+    {
+      "bucket_start": "2026-11-17",
+      "module": "m2_risk_disclosure",
+      "total": 7,
+      "high": 0,
+      "medium": 2,
+      "low": 5
+    },
+    {
+      "bucket_start": "2026-11-17",
+      "module": "m3_shadow_advisory",
+      "total": 10,
+      "high": 2,
+      "medium": 3,
+      "low": 5
+    },
+    {
+      "bucket_start": "2026-11-18",
+      "module": "m1_third_party_ad",
+      "total": 14,
+      "high": 0,
+      "medium": 7,
+      "low": 7
+    },
+    {
+      "bucket_start": "2026-11-18",
+      "module": "m2_risk_disclosure",
+      "total": 11,
+      "high": 1,
+      "medium": 4,
+      "low": 6
+    },
+    {
+      "bucket_start": "2026-11-18",
+      "module": "m3_shadow_advisory",
+      "total": 4,
+      "high": 1,
+      "medium": 0,
+      "low": 3
+    },
+    {
+      "bucket_start": "2026-11-19",
+      "module": "m1_third_party_ad",
+      "total": 12,
+      "high": 2,
+      "medium": 1,
+      "low": 9
+    },
+    {
+      "bucket_start": "2026-11-19",
+      "module": "m2_risk_disclosure",
+      "total": 9,
+      "high": 3,
+      "medium": 3,
+      "low": 3
+    },
+    {
+      "bucket_start": "2026-11-19",
+      "module": "m3_shadow_advisory",
+      "total": 10,
+      "high": 0,
+      "medium": 1,
+      "low": 9
+    },
+    {
+      "bucket_start": "2026-11-20",
+      "module": "m1_third_party_ad",
+      "total": 17,
+      "high": 3,
+      "medium": 4,
+      "low": 10
+    },
+    {
+      "bucket_start": "2026-11-20",
+      "module": "m2_risk_disclosure",
+      "total": 9,
+      "high": 3,
+      "medium": 2,
+      "low": 4
+    },
+    {
+      "bucket_start": "2026-11-20",
+      "module": "m3_shadow_advisory",
+      "total": 10,
+      "high": 2,
+      "medium": 3,
+      "low": 5
+    },
+    {
+      "bucket_start": "2026-11-21",
+      "module": "m1_third_party_ad",
+      "total": 13,
+      "high": 1,
+      "medium": 0,
+      "low": 12
+    },
+    {
+      "bucket_start": "2026-11-21",
+      "module": "m2_risk_disclosure",
+      "total": 9,
+      "high": 1,
+      "medium": 1,
+      "low": 7
+    },
+    {
+      "bucket_start": "2026-11-21",
+      "module": "m3_shadow_advisory",
+      "total": 7,
+      "high": 0,
+      "medium": 3,
+      "low": 4
+    }
+  ]
+}

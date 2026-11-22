@@ -1,0 +1,30 @@
+# Lite stack: rules + lexicon only, no Ollama, no model download (README, "Quick start lite").
+#   docker compose -f docker-compose.yml -f docker-compose.lite.yml up --build   (or `make up-lite`)
+# What you lose: the LLM second opinion (findings say "Ocena modelu niedostępna: wynik z reguł")
+# and the bge-m3 embeddings (M1 / M3 heads fall back to their lexicon variant, no vectors are
+# stored). ollama, ollama-init and worker-llm only start with `--profile llm`.
+# Needs Compose v2.24+ (`!reset`).
+x-lite: &lite
+  environment:
+    AI_MODE: rules
+
+services:
+  api: *lite
+  worker-scrape: *lite
+  worker-analyze: *lite
+  worker-check: *lite
+  beat: *lite
+  seed: *lite
+
+  ai:
+    environment:
+      AI_MODE: rules
+      EMBED_ENABLED: "false"
+    depends_on: !reset {}
+
+  ollama:
+    profiles: ["llm"]
+  ollama-init:
+    profiles: ["llm"]
+  worker-llm:
+    profiles: ["llm"]

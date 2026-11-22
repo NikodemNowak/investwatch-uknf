@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PrimeFX24: Handluj złotem bez prowizji</title>
+  <!-- Fixture page: the PrimeFX24 landing of post ...0003 in data/fixtures (fictional firm).
+       Desktop/tablet: warning in a 9 px grey footer. Phone: also collapsed under a summary. -->
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 16px;
+           line-height: 1.5; color: #1a1a1a; background: #ffffff; margin: 0; }
+    header, main, footer { max-width: 1200px; margin: 0 auto; padding: 16px 24px; }
+    .logo { font-size: 20px; font-weight: 700; color: #1a1a1a; text-decoration: none; }
+    .hero { padding: 40px 0 24px; }
+    .hero h1 { font-size: 48px; font-weight: 800; line-height: 1.2; margin: 0 0 16px; }
+    .hero .lead { font-size: 28px; font-weight: 600; color: #0a7d32; margin: 0 0 32px; }
+    main > p { margin: 0 0 24px; }
+    .cta { padding: 16px 0 0; }
+    .button { display: inline-block; background: #0a7d32; color: #ffffff; font-size: 18px;
+              font-weight: 700; padding: 14px 40px; border-radius: 6px; text-decoration: none; }
+    .gallery { height: 1300px; margin-top: 48px; border-radius: 12px;
+               background: linear-gradient(180deg, #fff8e1, #ffffff); }
+    footer { margin-top: 40px; }
+    .legal p, .company { font-size: 9px; color: #c4c4c4; margin: 0 0 8px; }
+    details { display: none; }
+    details summary { font-size: 12px; color: #9a9a9a; cursor: pointer; }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 34px; }
+      .hero .lead { font-size: 22px; }
+      .gallery { height: 2600px; }
+      footer > .legal { display: none; }
+      details { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header><a class="logo" href="#">PrimeFX24</a></header>
+  <main>
+    <section class="hero">
+      <h1>Handluj złotem bez prowizji.</h1>
+      <p class="lead">Zarabiaj do 25% miesięcznie dzięki naszym sygnałom AI.</p>
+    </section>
+    <p>Dołącz do 120 000 inwestorów, którzy już zarabiają.</p>
+    <p>Otwórz konto w 3 minuty.</p>
+    <p>Bonus powitalny 100% od pierwszej wpłaty.</p>
+    <p>Sygnały AI analizują rynek złota 24 godziny na dobę i podpowiadają, kiedy otworzyć pozycję.</p>
+    <p>Zero prowizji od transakcji na złocie, srebrze i ropie.</p>
+    <section class="cta"><a class="button" href="#">Otwórz konto</a></section>
+    <div class="gallery" aria-hidden="true"></div>
+  </main>
+  <footer>
+    <div class="legal">
+      <p>Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty
+         środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznych odnotowuje
+         straty.</p>
+    </div>
+    <details>
+      <summary>Pokaż ostrzeżenie o ryzyku</summary>
+      <div class="legal">
+        <p>Kontrakty CFD są złożonymi instrumentami i wiążą się z dużym ryzykiem szybkiej utraty
+           środków z powodu dźwigni finansowej. 81% rachunków inwestorów detalicznych odnotowuje
+           straty.</p>
+      </div>
+    </details>
+    <p class="company">PrimeFX24 jest nazwą handlową Kyrenia Prime Ltd, Limassol, Cypr.
+       Fikcyjna firma na potrzeby testów InvestWatch.</p>
+  </footer>
+</body>
+</html>

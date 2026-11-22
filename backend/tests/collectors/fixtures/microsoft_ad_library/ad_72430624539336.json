@@ -1,0 +1,78 @@
+{
+ "@odata.context": "https://adlibrary.api.bingads.microsoft.com/api/v1/$metadata#Ads(AdDetails(ImpressionsByCountry(),Targets()))/$entity",
+ "AdId": 72430624539336,
+ "AdvertiserName": "FxPro Financial Services Ltd",
+ "AdvertiserId": 4295011546,
+ "Title": "Online Forex Trading Platform - Online Forex CFD Trading",
+ "Description": "Competitive Forex spreads with FxPro. Start trading 74% of retail CFD accounts lose money.. Secure funding methods. 2100+ Trading Instruments: FX, Metals, CFDs. MT4 Platform. Join.",
+ "DisplayUrl": "promo.fxpro.com/Trading/Online",
+ "DestinationUrl": "https://promo.fxpro.com/en/promo-forex",
+ "AssetJson": "",
+ "AdDetails": {
+  "PaidForByName": "Inmobi META- Business",
+  "StartDate": "2023-06-01",
+  "EndDate": "2025-11-28",
+  "TotalImpressionsRange": "100K - 250K",
+  "RejectionJson": null,
+  "ImpressionsByCountry": [
+   {
+    "Country": "Czechia",
+    "ImpressionShare": "0.9%"
+   },
+   {
+    "Country": "Estonia",
+    "ImpressionShare": "0.2%"
+   },
+   {
+    "Country": "Germany",
+    "ImpressionShare": "9.6%"
+   },
+   {
+    "Country": "Hungary",
+    "ImpressionShare": "1.0%"
+   },
+   {
+    "Country": "Ireland",
+    "ImpressionShare": "1.0%"
+   },
+   {
+    "Country": "Italy",
+    "ImpressionShare": "3.3%"
+   },
+   {
+    "Country": "Latvia",
+    "ImpressionShare": "0.5%"
+   },
+   {
+    "Country": "Lithuania",
+    "ImpressionShare": "1.9%"
+   },
+   {
+    "Country": "Netherlands",
+    "ImpressionShare": "75.5%"
+   },
+   {
+    "Country": "Poland",
+    "ImpressionShare": "2.5%"
+   },
+   {
+    "Country": "Slovakia",
+    "ImpressionShare": "0.7%"
+   },
+   {
+    "Country": "Romania",
+    "ImpressionShare": "2.8%"
+   }
+  ],
+  "Targets": [
+   {
+    "TargetType": "Location",
+    "UsedForExclusion": true
+   },
+   {
+    "TargetType": "MicrosoftAudiences",
+    "UsedForExclusion": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,41 @@
+{
+  "_comment": "SYNTHETIC records in the shape of the Meta Ad Library API (ads_archive). Fictional firms and people; no data obtained from Meta. Shown in the UI with the 'dane syntetyczne' badge.",
+  "synthetic": true,
+  "data": [
+    {
+      "synthetic": true,
+      "id": "900000000000001",
+      "page_id": "900000000000101",
+      "page_name": "Aurora Kapitał Dom Maklerski",
+      "ad_delivery_start_time": "2026-11-10",
+      "ad_creative_bodies": ["Zarabiaj nawet 38% rocznie z programem Turbo Zysk! Otwórz rachunek w 5 minut."],
+      "ad_creative_link_titles": ["Program Turbo Zysk"],
+      "ad_creative_link_captions": ["aurorakapital.example"],
+      "publisher_platforms": ["facebook", "instagram"],
+      "bylines": ["Aurora Kapitał Dom Maklerski S.A."],
+      "languages": ["pl"]
+    },
+    {
+      "synthetic": true,
+      "id": "900000000000002",
+      "page_id": "900000000000202",
+      "page_name": "Kasia o finansach (fikcyjna)",
+      "ad_delivery_start_time": "2026-11-15",
+      "ad_creative_bodies": ["Mój kod KASIA500 daje 500 zł bonusu na start w PrimeFX24. Link w opisie, współpraca reklamowa."],
+      "ad_creative_link_captions": ["primefx24.example"],
+      "publisher_platforms": ["instagram"],
+      "bylines": ["Kyrenia Prime Ltd"],
+      "languages": ["pl"]
+    },
+    {
+      "synthetic": true,
+      "id": "900000000000003",
+      "page_id": "900000000000303",
+      "page_name": "Sygnały Premium (fikcyjne)",
+      "ad_delivery_start_time": "2026-11-18",
+      "ad_creative_bodies": ["Dołącz do zamkniętej grupy: codzienne indywidualne rekomendacje kupna i sprzedaży akcji. Gwarantowany zysk albo zwrot pieniędzy."],
+      "publisher_platforms": ["facebook"],
+      "languages": ["pl"]
+    }
+  ]
+}
